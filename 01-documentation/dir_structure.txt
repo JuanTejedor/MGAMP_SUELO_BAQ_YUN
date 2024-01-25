@@ -1,0 +1,3 @@
+raw_data -> contiene las seqs originales (sin submuestrear)
+muxed-pe-barcode-in-seq -> contiene las seqs originales (submuestreadas) (el dir recibe el nombre identificativo del tipo de datos que tenemos, para saber como importarlos)
+
