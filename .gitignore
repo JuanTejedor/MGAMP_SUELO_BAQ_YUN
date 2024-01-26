@@ -1,3 +1,5 @@
 forward.fastq.gz
 reverse.fastq.gz
 03-data/00raw_data/sequences.fastq.gz
+04-results/01_PE/import_EMP_muxed.qza
+04-results/02_SE/import_EMP_muxed.qza
