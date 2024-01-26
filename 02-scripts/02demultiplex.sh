@@ -2,28 +2,28 @@
 
 ######## DEMULTIPLEXADO DE READS ########
 
-
-# Creamos carpetas para almacenar el resultado del demultiplexado.
-mkdir 04-results/01muxed_pe/demuxed_pe
-mkdir 04-results/01muxed_pe/demuxed_pe/errors
-mkdir 04-results/02muxed_se/demuxed_se
-mkdir 04-results/02muxed_se/demuxed_se/errors
-
 # Como nuestros reads son del tipo EMP y teníamos tanto SE como PE, usaremos los comandos "emp-paired" y "emp-single".
+
+# Para PE
+mkdir 04-results/01_PE/errors
 qiime demux emp-paired \
---i-seqs 03-data/01muxed_pe/sequences_EMP_muxed_pe.qza \
+--i-seqs 04-results/01_PE/import_EMP_muxed.qza \
 --m-barcodes-file 01-documentation/sample-metadata.tsv \
 --m-barcodes-column BarcodeSequence \
 --p-rev-comp-mapping-barcodes \
---o-per-sample-sequences 04-results/01muxed_pe/demuxed_pe/demux.qza \
---o-error-correction-details 04-results/01muxed_pe/demuxed_pe/errors.qza \
---verbose
+--o-per-sample-sequences 04-results/01_PE/demuxed.qza \
+--o-error-correction-details 04-results/01_PE/errors/errors_demuxed.qza
+# Saved SampleData[PairedEndSequencesWithQuality] to: 04-results/01_PE/demuxed.qza
+# Saved ErrorCorrectionDetails to: 04-results/01_PE/errors/errors_demuxed.qza
 
-
-qiime demux emp-paired \
---i-seqs 03-data/01muxed_pe/sequences_EMP_muxed_pe.qza \
+# Para SE
+mkdir 04-results/02_SE/errors
+qiime demux emp-single \
+--i-seqs 04-results/02_SE/import_EMP_muxed.qza \
 --m-barcodes-file 01-documentation/sample-metadata.tsv \
 --m-barcodes-column BarcodeSequence \
---o-per-sample-sequences 04-results/01muxed_pe/demuxed_pe/demux.qza \
---o-error-correction-details 04-results/01muxed_pe/demuxed_pe/errors.qza \
---verbose
+--p-rev-comp-mapping-barcodes \
+--o-per-sample-sequences 04-results/02_SE/demuxed.qza \
+--o-error-correction-details 04-results/02_SE/errors/errors_demuxed.qza
+#Saved SampleData[SequencesWithQuality] to: 04-results/02_SE/demuxed.qza
+#Saved ErrorCorrectionDetails to: 04-results/02_SE/errors/errors_demuxed.qza
