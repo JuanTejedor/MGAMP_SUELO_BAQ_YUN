@@ -2,28 +2,38 @@
 
 # Las lecturas son de la región V4 y se han usado los cebadores 515F/806R.
 
-NOMBRE_PROYECTO=$1
-workdir.sh "$NOMBRE_PROYECTO"
 
+## PREPARACION DEL DIRECTORIO DE TRABAJO ##
+# Los datos crudos a utilizar deben estar en una carpeta, dentro de "data" (creada anteriormente mediante el script workdir.sh),
+# llamada "raw_data". A continuación, el nombre de esta carpeta se cambia para
+# facilitar el acceso y seguir un orden cronologico.
 mv 03-data/raw_data 03-data/00raw_data
+# Movemos los metadatos a la carpeta de documentacion
+mv 03-data/00raw_data/sample-metadata.tsv 01-documentation
+
 
 ## SUBMUESTREO ##
 # Submuestreamos los reads originales, tomando sólo el 10%. Antes creamos
-# carpeta donde guardarlo. 
+# carpeta donde guardarlos. 
 mkdir 03-data/01muxed_pe
-mv 03-data/00raw_data/sample-metadata.tsv 01-documentation
+# Copiamos los barcodes a los datos submuestreados.
 cp 03-data/00raw_data/barcodes.fastq.gz 03-data/01muxed_pe/
+# Realizamos el submuestreo.
 seqtk sample -s100 03-data/00raw_data/reverse.fastq.gz 0.1 > 03-data/01muxed_pe/reverse.fastq
 seqtk sample -s100 03-data/00raw_data/forward.fastq.gz 0.1 > 03-data/01muxed_pe/forward.fastq
+# Comprimimos ambos archivos (para que tengan el formato adecuado para QIIME)
 gzip 03-data/01muxed_pe/reverse.fastq
 gzip 03-data/01muxed_pe/forward.fastq
 
+
 ## EVALUACIÓN DE CALIDAD ## 
+# Ejecutamos FASTQC y guardamos los resultados en una carpeta.
 mkdir 04-results/01muxed_pe_fastqc
 fastqc 03-data/01muxed_pe/forward.fastq.gz 03-data/01muxed_pe/reverse.fastq.gz -o 04-results/01muxed_pe_fastqc/
 # Para forwards la calidad es muy buena (excepto en el último nucleotido),
 # mientras que para reverse es muy mala (excepto del 9 al 100). Además, hay
 # algunos forwards que en su extremo final tienen un poco de adaptador.
+
 
 ## IMPORTACIÓN ##
 # Para importar los datos debemos conocer la naturaleza de estos. Para ello
@@ -40,3 +50,8 @@ qiime tools import \
   --type EMPPairedEndSequences \
   --input-path 03-data/01muxed_pe \
   --output-path 03-data/01muxed_pe/EMP_muxed_pe.qza
+
+# Además, como la calidad de los reverse reads era mala, vamos a importar
+# también los forward reads solo, mediante una importanción single end. Para
+# ello, debemos crear otro directorio y hacer unos cuantos cambios.
+
