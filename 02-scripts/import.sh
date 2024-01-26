@@ -1,3 +1,15 @@
+#!/bin/bash
+
+
+
+## SUBMUESTREO ##
+# Submuestreamos los reads originales, tomando sólo el 10%. Antes creamos carpeta donde guardarlo. 
+mkdir 03-data/muxed_pe
+cp 03-data/raw_data/barcodes.fastq.gz 03-data/muxed_pe/
+seqtk sample -s100 03-data/raw_data/reverse.fastq.gz 0.1 > 03-data/muxed_pe/reverse_sub.fastq
+seqtk sample -s100 03-data/raw_data/forward.fastq.gz 0.1 > 03-data/muxed_pe/forward_sub.fastq
+
+## IMPORTACIÓN ##
 # Para importar los datos debemos conocer la naturaleza de estos: sabemos que
 # son PE (2 fastq), multiplexed (están incluidas todas las muestras) y no tiene
 # un formato específico (debemos crear manifest.tsv). Falta determinar la
