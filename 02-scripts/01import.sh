@@ -45,7 +45,7 @@ fastqc 03-data/00raw_data/02_SE/sequences.fastq.gz -o 04-results/02_SE/fastqc/
 qiime tools import \
   --type EMPPairedEndSequences \
   --input-path 03-data/00raw_data/01_PE \
-  --output-path 04-results/01_PE/import_EMP_muxed.qza
+  --output-path 03-data/00raw_data/01_PE/import_EMP_muxed.qza
 # Imported 03-data/00raw_data/01_PE as EMPPairedEndDirFmt to 04-results/01_PE/import_EMP_muxed.qza
 
 # Además, como la calidad de los reverse reads era mala, vamos a importar
@@ -54,7 +54,7 @@ qiime tools import \
 qiime tools import \
   --type EMPSingleEndSequences  \
   --input-path 03-data/00raw_data/02_SE \
-  --output-path 04-results/02_SE/import_EMP_muxed.qza
+  --output-path 03-data/00raw_data/02_SE/import_EMP_muxed.qza
 #Imported 03-data/00raw_data/02_SE as EMPSingleEndDirFmt to 04-results/02_SE/import_EMP_muxed.qza
 
 # Por tanto, tenemos 2 directorios, uno con la importación PE y otro con la
