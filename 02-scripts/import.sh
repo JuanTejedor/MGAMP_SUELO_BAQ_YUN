@@ -18,7 +18,7 @@ seqtk sample -s100 03-data/00raw_data/forward.fastq.gz 0.1 > 03-data/01muxed_pe/
 # son PE (2 fastq), multiplexed (están incluidas todas las muestras) y no tiene
 # un formato específico (debemos crear manifest.tsv). Falta determinar la
 # calidad, para lo que usamos:
-vsearch --fastq_chars 03-data/raw_data/sub_forward.fastq.gz
+vsearch --fastq_chars 03-data/01muxed_pe/forward_sub.fastq
 # Indica que la calidad está en formato phred+33. 
 
 # Luego, tenemos datos: PE, multiplexed, phred 33 y necesitamos manifest.tsv. Es
