@@ -1,2 +1,3 @@
 00raw_data -> contiene las seqs originales (sin submuestrear)
-01muxed_pe -> contiene las seqs originales (submuestreadas)
+01muxed_pe -> contiene las seqs submuestreadas y la importacion a QIIME (tipo EMP, PE)
+02muxed_se -> contiene la seqs forwards submuestreadas y la importacion a QIIME (tipo EMP, SE)
