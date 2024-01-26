@@ -33,8 +33,9 @@ gzip 03-data/01muxed_pe/forward.fastq
 
 ## EVALUACIÓN DE CALIDAD ## 
 # Ejecutamos FASTQC y guardamos los resultados en una carpeta.
-mkdir 04-results/01muxed_pe_fastqc
-fastqc 03-data/01muxed_pe/forward.fastq.gz 03-data/01muxed_pe/reverse.fastq.gz -o 04-results/01muxed_pe_fastqc/
+mkdir 04-results/01muxed_pe
+mkdir 04-results/01muxed_pe/fastqc
+fastqc 03-data/01muxed_pe/forward.fastq.gz 03-data/01muxed_pe/reverse.fastq.gz -o 04-results/01muxed_pe/fastqc/
 # Para forwards la calidad es muy buena (excepto en el último nucleotido),
 # mientras que para reverse es muy mala (excepto del 9 al 100). Además, hay
 # algunos forwards que en su extremo final tienen un poco de adaptador.
