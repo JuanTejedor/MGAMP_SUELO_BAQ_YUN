@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+NOMBRE_PROYECTO=$1
+workdir.sh "$NOMBRE_PROYECTO"
+
 mv 03-data/raw_data 03-data/00raw_data
 
 ## SUBMUESTREO ##
