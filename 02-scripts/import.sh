@@ -1,12 +1,14 @@
 #!/bin/bash
 
-# Las lecturas son de la región V4 y se han usado los cebadores 515F/806R.
-
+## REQUISITOS PREVIOS ##
+# Para que el siguiente script funcione correctamente es necesario tener creados
+# previamente todos los directorios del proyecto utilizando el script
+# workdir.sh. Tras ello, se deben importar los datos crudos en una carpeta
+# llamada "/raw_data" que se debe colocar dentro de la carpeta "/03-data".
 
 ## PREPARACION DEL DIRECTORIO DE TRABAJO ##
-# Los datos crudos a utilizar deben estar en una carpeta, dentro de "data" (creada anteriormente mediante el script workdir.sh),
-# llamada "raw_data". A continuación, el nombre de esta carpeta se cambia para
-# facilitar el acceso y seguir un orden cronologico.
+# El nombre de la carpeta con los datos crudos se cambia para facilitar el acceso y seguir un orden
+# cronologico.
 mv 03-data/raw_data 03-data/00raw_data
 # Movemos los metadatos a la carpeta de documentacion
 mv 03-data/00raw_data/sample-metadata.tsv 01-documentation
