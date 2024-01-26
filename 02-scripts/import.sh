@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Las lecturas son de la región V4 y se han usado los cebadores 515F/806R.
 
 NOMBRE_PROYECTO=$1
 workdir.sh "$NOMBRE_PROYECTO"
@@ -9,6 +10,7 @@ mv 03-data/raw_data 03-data/00raw_data
 ## SUBMUESTREO ##
 # Submuestreamos los reads originales, tomando sólo el 10%. Antes creamos carpeta donde guardarlo. 
 mkdir 03-data/01muxed_pe
+mv 03-data/00raw_data/sample-metadata.tsv 03-data/01muxed_pe/
 cp 03-data/raw_data/barcodes.fastq.gz 03-data/muxed_pe/
 seqtk sample -s100 03-data/00raw_data/reverse.fastq.gz 0.1 > 03-data/01muxed_pe/reverse_sub.fastq
 seqtk sample -s100 03-data/00raw_data/forward.fastq.gz 0.1 > 03-data/01muxed_pe/forward_sub.fastq
