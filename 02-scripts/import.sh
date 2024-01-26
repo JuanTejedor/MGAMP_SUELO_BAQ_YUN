@@ -1,5 +1,8 @@
 #!/bin/bash
 
+######## IMPORTACIÓN DE READS A QIIME ########
+
+
 ## REQUISITOS PREVIOS ##
 # Para que el siguiente script funcione correctamente es necesario tener creados
 # previamente todos los directorios del proyecto utilizando el script
@@ -56,13 +59,13 @@ qiime tools import \
 # Además, como la calidad de los reverse reads era mala, vamos a importar
 # también los forward reads solo, mediante una importanción single end. Para
 # ello, debemos crear otro directorio y hacer unos cuantos cambios.
-cp -r 03-data/01muxed_pe/ 03-data/01muxed_se/
-rm 03-data/01muxed_se/reverse.fastq.gz 03-data/01muxed_se/*qza
-mv 03-data/01muxed_se/forward.fastq.gz 03-data/01muxed_se/sequences.fastq.gz
+cp -r 03-data/01muxed_pe/ 03-data/02muxed_se/
+rm 03-data/02muxed_se/reverse.fastq.gz 03-data/02muxed_se/*qza
+mv 03-data/02muxed_se/forward.fastq.gz 03-data/02muxed_se/sequences.fastq.gz
 qiime tools import \
   --type EMPSingleEndSequences \
-  --input-path 03-data/01muxed_se \
-  --output-path 03-data/01muxed_se/EMP_muxed_se.qza
+  --input-path 03-data/02muxed_se \
+  --output-path 03-data/02muxed_se/EMP_muxed_se.qza
 
 # Por tanto, tenemos 2 directorios, uno con la importación PE y otro con la
 # importación SE.
