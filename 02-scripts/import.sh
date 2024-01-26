@@ -44,8 +44,8 @@ fastqc 03-data/01muxed_pe/forward.fastq.gz 03-data/01muxed_pe/reverse.fastq.gz -
 # tenemos vienen dados en 3 archivos: forward.fastq.gz, reverse.fastq.gz y
 # barcodes.fastq.gz. Además, estan multiplexados pues sólo tenemos 1 .fastq para
 # cada tipo de read. De este modo, se observa que nuestros datos siguen el
-# formato del "EMP protocol" paired reads. Por ello, para importarlos debemos usar el
-# parámetro "EMPPairedEndSequences" y la siguiente función.
+# formato del "EMP protocol" paired reads. Por ello, para importarlos debemos
+# usar el parámetro "EMPPairedEndSequences" y la siguiente función.
 qiime tools import \
   --type EMPPairedEndSequences \
   --input-path 03-data/01muxed_pe \
@@ -54,4 +54,13 @@ qiime tools import \
 # Además, como la calidad de los reverse reads era mala, vamos a importar
 # también los forward reads solo, mediante una importanción single end. Para
 # ello, debemos crear otro directorio y hacer unos cuantos cambios.
+cp -r 03-data/01muxed_pe/ 03-data/01muxed_se/
+rm 03-data/01muxed_se/reverse.fastq.gz 03-data/01muxed_se/*qza
+mv 03-data/01muxed_se/forward.fastq.gz 03-data/01muxed_se/sequences.fastq.gz
+qiime tools import \
+  --type EMPSingleEndSequences \
+  --input-path 03-data/01muxed_se \
+  --output-path 03-data/01muxed_se/EMP_muxed_se.qza
 
+# Por tanto, tenemos 2 directorios, uno con la importación PE y otro con la
+# importación SE.
