@@ -1,0 +1,3172 @@
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.2_75_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.2_75_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.2_75_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.2_75_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.033 s (32911.539 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  1
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             1 (100.0%)
+
+Total basepairs processed:           302 bp
+  Read 1:           151 bp
+  Read 2:           151 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            302 bp (100.0%)
+  Read 1:           151 bp
+  Read 2:           151 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.3_62_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.3_62_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.3_62_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.3_62_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.026 s (4408.320 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  6
+  Read 1 with adapter:                       1 (16.7%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             6 (100.0%)
+
+Total basepairs processed:         1,812 bp
+  Read 1:           906 bp
+  Read 2:           906 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          1,808 bp (99.8%)
+  Read 1:           902 bp
+  Read 2:           906 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	0.0	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.3_73_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.3_73_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.3_73_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.3_73_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+No reads processed!
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.1.1_72_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.1.1_72_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.1.1_72_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.1.1_72_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.025 s (6248.772 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  4
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             4 (100.0%)
+
+Total basepairs processed:         1,208 bp
+  Read 1:           604 bp
+  Read 2:           604 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          1,208 bp (100.0%)
+  Read 1:           604 bp
+  Read 2:           604 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.2_71_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.2_71_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.2_71_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.2_71_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.030 s (30427.933 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  1
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             1 (100.0%)
+
+Total basepairs processed:           302 bp
+  Read 1:           151 bp
+  Read 2:           151 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            302 bp (100.0%)
+  Read 1:           151 bp
+  Read 2:           151 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.1_20_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.1_20_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.1_20_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.1_20_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.034 s (41.975 µs/read; 1.43 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                810
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           810 (100.0%)
+
+Total basepairs processed:       244,620 bp
+  Read 1:       122,310 bp
+  Read 2:       122,310 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        244,614 bp (100.0%)
+  Read 1:       122,304 bp
+  Read 2:       122,310 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	12.7	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.2_9_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.2_9_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.2_9_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.2_9_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.038 s (53.303 µs/read; 1.13 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                720
+  Read 1 with adapter:                       2 (0.3%)
+  Read 2 with adapter:                       3 (0.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           720 (100.0%)
+
+Total basepairs processed:       217,440 bp
+  Read 1:       108,720 bp
+  Read 2:       108,720 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        217,425 bp (100.0%)
+  Read 1:       108,714 bp
+  Read 2:       108,711 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	11.2	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 3 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	11.2	0	3
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.3_36_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.3_36_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.3_36_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.3_36_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.039 s (59.409 µs/read; 1.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                656
+  Read 1 with adapter:                       3 (0.5%)
+  Read 2 with adapter:                       2 (0.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           656 (100.0%)
+
+Total basepairs processed:       198,112 bp
+  Read 1:        99,056 bp
+  Read 2:        99,056 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        198,096 bp (100.0%)
+  Read 1:        99,047 bp
+  Read 2:        99,049 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 3 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	10.2	0	3
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	10.2	0	1
+4	1	2.6	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.2_2_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.2_2_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.2_2_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.2_2_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.039 s (59.277 µs/read; 1.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                658
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           658 (100.0%)
+
+Total basepairs processed:       198,716 bp
+  Read 1:        99,358 bp
+  Read 2:        99,358 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        198,713 bp (100.0%)
+  Read 1:        99,358 bp
+  Read 2:        99,355 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	10.3	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.3_52_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.3_52_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.3_52_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.3_52_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.037 s (57.263 µs/read; 1.05 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                645
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           645 (100.0%)
+
+Total basepairs processed:       194,790 bp
+  Read 1:        97,395 bp
+  Read 2:        97,395 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        194,746 bp (100.0%)
+  Read 1:        97,395 bp
+  Read 2:        97,351 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+44	1	0.0	1	0 1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.1_27_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.1_27_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.1_27_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.1_27_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.039 s (41.058 µs/read; 1.46 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                950
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           950 (100.0%)
+
+Total basepairs processed:       286,900 bp
+  Read 1:       143,450 bp
+  Read 2:       143,450 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        286,897 bp (100.0%)
+  Read 1:       143,447 bp
+  Read 2:       143,450 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	14.8	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.2_4_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.2_4_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.2_4_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.2_4_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.040 s (58.562 µs/read; 1.02 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                676
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           676 (100.0%)
+
+Total basepairs processed:       204,152 bp
+  Read 1:       102,076 bp
+  Read 2:       102,076 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        204,149 bp (100.0%)
+  Read 1:       102,076 bp
+  Read 2:       102,073 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	10.6	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.3_51_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.3_51_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.3_51_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.3_51_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (66.511 µs/read; 0.90 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                537
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           537 (100.0%)
+
+Total basepairs processed:       162,174 bp
+  Read 1:        81,087 bp
+  Read 2:        81,087 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        162,171 bp (100.0%)
+  Read 1:        81,084 bp
+  Read 2:        81,087 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	8.4	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.1_14_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.1_14_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.1_14_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.1_14_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (46.701 µs/read; 1.28 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                883
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           883 (100.0%)
+
+Total basepairs processed:       266,666 bp
+  Read 1:       133,333 bp
+  Read 2:       133,333 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        266,663 bp (100.0%)
+  Read 1:       133,330 bp
+  Read 2:       133,333 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	13.8	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+Running external command line application. This may print messages to stdout and/or stderr.
+The commands to be run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.2_75_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.2_75_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.2_75_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.2_75_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.3_62_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.1.3_62_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.3_62_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.1.3_62_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.3_73_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1370.3_73_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.3_73_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1370.3_73_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.1.1_72_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.1.1_72_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.1.1_72_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.1.1_72_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.2_71_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ1552.2_71_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.2_71_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ1552.2_71_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.1_20_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.1_20_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.1_20_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.1_20_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.2_9_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.2_9_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.2_9_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.2_9_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.3_36_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.1.3_36_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.3_36_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.1.3_36_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.2_2_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.2_2_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.2_2_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.2_2_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.3_52_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2420.3_52_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.3_52_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2420.3_52_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.1_27_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.1_27_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.1_27_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.1_27_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.2_4_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.2_4_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.2_4_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.2_4_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.3_51_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2462.3_51_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.3_51_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2462.3_51_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.1_14_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.1_14_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.1_14_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.1_14_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.2_41_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.2_41_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.2_41_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.2_41_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.037 s (55.651 µs/read; 1.08 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                662
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       1 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           662 (100.0%)
+
+Total basepairs processed:       199,924 bp
+  Read 1:        99,962 bp
+  Read 2:        99,962 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        199,917 bp (100.0%)
+  Read 1:        99,959 bp
+  Read 2:        99,958 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	10.3	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	2.6	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.3_34_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.3_34_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.3_34_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.3_34_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.044 s (47.710 µs/read; 1.26 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                921
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           921 (100.0%)
+
+Total basepairs processed:       278,142 bp
+  Read 1:       139,071 bp
+  Read 2:       139,071 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        278,134 bp (100.0%)
+  Read 1:       139,068 bp
+  Read 2:       139,066 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	14.4	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	1	0.9	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.1_24_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.1_24_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.1_24_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.1_24_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (58.573 µs/read; 1.02 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                614
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           614 (100.0%)
+
+Total basepairs processed:       185,428 bp
+  Read 1:        92,714 bp
+  Read 2:        92,714 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        185,425 bp (100.0%)
+  Read 1:        92,711 bp
+  Read 2:        92,714 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	9.6	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.2_18_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.2_18_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.2_18_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.2_18_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.037 s (66.118 µs/read; 0.91 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                562
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           562 (100.0%)
+
+Total basepairs processed:       169,724 bp
+  Read 1:        84,862 bp
+  Read 2:        84,862 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        169,721 bp (100.0%)
+  Read 1:        84,859 bp
+  Read 2:        84,862 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	8.8	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.3_32_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.3_32_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.3_32_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.3_32_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (83.501 µs/read; 0.72 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                434
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           434 (100.0%)
+
+Total basepairs processed:       131,068 bp
+  Read 1:        65,534 bp
+  Read 2:        65,534 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        131,065 bp (100.0%)
+  Read 1:        65,531 bp
+  Read 2:        65,534 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	6.8	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.1_23_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.1_23_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.1_23_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.1_23_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.042 s (36.048 µs/read; 1.66 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,168
+  Read 1 with adapter:                       5 (0.4%)
+  Read 2 with adapter:                       5 (0.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,168 (100.0%)
+
+Total basepairs processed:       352,736 bp
+  Read 1:       176,368 bp
+  Read 2:       176,368 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        352,705 bp (100.0%)
+  Read 1:       176,352 bp
+  Read 2:       176,353 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 5 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4	18.2	0	4
+4	1	4.6	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 5 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5	18.2	0	5
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.2_6_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.2_6_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.2_6_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.2_6_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.042 s (41.692 µs/read; 1.44 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,010
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,010 (100.0%)
+
+Total basepairs processed:       305,020 bp
+  Read 1:       152,510 bp
+  Read 2:       152,510 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        305,014 bp (100.0%)
+  Read 1:       152,504 bp
+  Read 2:       152,510 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	15.8	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.3_10_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.3_10_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.3_10_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.3_10_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.044 s (33.506 µs/read; 1.79 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,304
+  Read 1 with adapter:                       5 (0.4%)
+  Read 2 with adapter:                      11 (0.8%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,304 (100.0%)
+
+Total basepairs processed:       393,808 bp
+  Read 1:       196,904 bp
+  Read 2:       196,904 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        393,760 bp (100.0%)
+  Read 1:       196,889 bp
+  Read 2:       196,871 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 5 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5	20.4	0	5
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 11 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	11	20.4	0	11
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.1_30_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.1_30_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.1_30_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.1_30_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.049 s (46.289 µs/read; 1.30 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,069
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,069 (100.0%)
+
+Total basepairs processed:       322,838 bp
+  Read 1:       161,419 bp
+  Read 2:       161,419 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        322,835 bp (100.0%)
+  Read 1:       161,419 bp
+  Read 2:       161,416 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	16.7	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.2_28_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.2_28_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.2_28_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.2_28_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.048 s (35.009 µs/read; 1.71 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,383
+  Read 1 with adapter:                       7 (0.5%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,383 (100.0%)
+
+Total basepairs processed:       417,666 bp
+  Read 1:       208,833 bp
+  Read 2:       208,833 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        417,645 bp (100.0%)
+  Read 1:       208,812 bp
+  Read 2:       208,833 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 7 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7	21.6	0	7
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.3_26_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.3_26_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.3_26_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.3_26_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.044 s (41.568 µs/read; 1.44 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,059
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       2 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,059 (100.0%)
+
+Total basepairs processed:       319,818 bp
+  Read 1:       159,909 bp
+  Read 2:       159,909 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        319,806 bp (100.0%)
+  Read 1:       159,903 bp
+  Read 2:       159,903 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	16.5	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	16.5	0	2
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.2_1_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.2_1_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.2_1_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.2_1_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.048 s (38.825 µs/read; 1.55 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,237
+  Read 1 with adapter:                       4 (0.3%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,237 (100.0%)
+
+Total basepairs processed:       373,574 bp
+  Read 1:       186,787 bp
+  Read 2:       186,787 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        373,560 bp (100.0%)
+  Read 1:       186,773 bp
+  Read 2:       186,787 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 4 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	19.3	0	3
+5	1	1.2	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.3_8_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.3_8_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.3_8_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.3_8_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.046 s (34.442 µs/read; 1.74 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,348
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,348 (100.0%)
+
+Total basepairs processed:       407,096 bp
+  Read 1:       203,548 bp
+  Read 2:       203,548 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        407,090 bp (100.0%)
+  Read 1:       203,545 bp
+  Read 2:       203,545 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	21.1	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	21.1	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.1_13_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.1_13_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.1_13_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.1_13_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.034 s (39.929 µs/read; 1.50 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                852
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           852 (100.0%)
+
+Total basepairs processed:       257,304 bp
+  Read 1:       128,652 bp
+  Read 2:       128,652 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        257,301 bp (100.0%)
+  Read 1:       128,649 bp
+  Read 2:       128,652 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	13.3	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.2_41_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.2_41_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.2_41_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.2_41_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.3_34_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2687.3_34_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.3_34_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2687.3_34_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.1_24_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.1_24_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.1_24_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.1_24_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.2_18_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.2_18_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.2_18_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.2_18_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.3_32_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ2838.3_32_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.3_32_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ2838.3_32_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.1_23_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.1_23_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.1_23_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.1_23_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.2_6_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.2_6_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.2_6_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.2_6_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.3_10_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ3473.3_10_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.3_10_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ3473.3_10_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.1_30_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.1_30_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.1_30_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.1_30_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.2_28_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.2_28_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.2_28_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.2_28_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.3_26_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.1.3_26_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.3_26_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.1.3_26_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.2_1_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.2_1_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.2_1_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.2_1_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.3_8_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4166.3_8_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.3_8_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4166.3_8_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.1_13_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.1_13_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.1_13_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.1_13_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.2_42_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.2_42_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.2_42_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.2_42_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (47.769 µs/read; 1.26 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                861
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           861 (100.0%)
+
+Total basepairs processed:       260,022 bp
+  Read 1:       130,011 bp
+  Read 2:       130,011 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        260,019 bp (100.0%)
+  Read 1:       130,008 bp
+  Read 2:       130,011 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	13.5	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.3_17_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.3_17_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.3_17_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.3_17_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (35.205 µs/read; 1.70 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,167
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,167 (100.0%)
+
+Total basepairs processed:       352,434 bp
+  Read 1:       176,217 bp
+  Read 2:       176,217 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        352,428 bp (100.0%)
+  Read 1:       176,211 bp
+  Read 2:       176,217 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	18.2	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.2_54_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.2_54_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.2_54_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.2_54_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.022 s (2432.028 µs/read; 0.02 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  9
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             9 (100.0%)
+
+Total basepairs processed:         2,718 bp
+  Read 1:         1,359 bp
+  Read 2:         1,359 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          2,718 bp (100.0%)
+  Read 1:         1,359 bp
+  Read 2:         1,359 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.3_55_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.3_55_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.3_55_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.3_55_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+No reads processed!
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.1_25_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.1_25_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.1_25_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.1_25_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.035 s (38.797 µs/read; 1.55 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                904
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           904 (100.0%)
+
+Total basepairs processed:       273,008 bp
+  Read 1:       136,504 bp
+  Read 2:       136,504 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        273,001 bp (100.0%)
+  Read 1:       136,501 bp
+  Read 2:       136,500 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	14.1	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	3.5	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.3_57_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.3_57_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.3_57_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.3_57_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.022 s (3118.379 µs/read; 0.02 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  7
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (14.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             7 (100.0%)
+
+Total basepairs processed:         2,114 bp
+  Read 1:         1,057 bp
+  Read 2:         1,057 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          2,110 bp (99.8%)
+  Read 1:         1,057 bp
+  Read 2:         1,053 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	0.0	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.2_70_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.2_70_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.2_70_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.2_70_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.024 s (12230.277 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  2
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             2 (100.0%)
+
+Total basepairs processed:           604 bp
+  Read 1:           302 bp
+  Read 2:           302 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            604 bp (100.0%)
+  Read 1:           302 bp
+  Read 2:           302 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.3_47_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.3_47_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.3_47_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.3_47_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.035 s (77.508 µs/read; 0.77 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                453
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       1 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           453 (100.0%)
+
+Total basepairs processed:       136,806 bp
+  Read 1:        68,403 bp
+  Read 2:        68,403 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        136,800 bp (100.0%)
+  Read 1:        68,400 bp
+  Read 2:        68,400 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	7.1	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	7.1	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.1_31_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.1_31_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.1_31_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.1_31_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (57.532 µs/read; 1.04 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                619
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       1 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           619 (100.0%)
+
+Total basepairs processed:       186,938 bp
+  Read 1:        93,469 bp
+  Read 2:        93,469 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        186,931 bp (100.0%)
+  Read 1:        93,466 bp
+  Read 2:        93,465 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	9.7	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	2.4	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.2_60_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.2_60_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.2_60_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.2_60_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.022 s (2165.151 µs/read; 0.03 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                 10
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):            10 (100.0%)
+
+Total basepairs processed:         3,020 bp
+  Read 1:         1,510 bp
+  Read 2:         1,510 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          3,020 bp (100.0%)
+  Read 1:         1,510 bp
+  Read 2:         1,510 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.3_46_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.3_46_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.3_46_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.3_46_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.034 s (42.910 µs/read; 1.40 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                784
+  Read 1 with adapter:                       2 (0.3%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           784 (100.0%)
+
+Total basepairs processed:       236,768 bp
+  Read 1:       118,384 bp
+  Read 2:       118,384 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        236,762 bp (100.0%)
+  Read 1:       118,378 bp
+  Read 2:       118,384 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	12.2	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.1_19_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.1_19_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.1_19_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.1_19_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (46.333 µs/read; 1.29 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                769
+  Read 1 with adapter:                       4 (0.5%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           769 (100.0%)
+
+Total basepairs processed:       232,238 bp
+  Read 1:       116,119 bp
+  Read 2:       116,119 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        232,223 bp (100.0%)
+  Read 1:       116,107 bp
+  Read 2:       116,116 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 4 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4	12.0	0	4
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	12.0	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.3_74_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.3_74_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.3_74_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.3_74_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.023 s (11252.642 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  2
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             2 (100.0%)
+
+Total basepairs processed:           604 bp
+  Read 1:           302 bp
+  Read 2:           302 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            604 bp (100.0%)
+  Read 1:           302 bp
+  Read 2:           302 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.1_59_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.1_59_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.1_59_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.1_59_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.025 s (2765.417 µs/read; 0.02 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  9
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             9 (100.0%)
+
+Total basepairs processed:         2,718 bp
+  Read 1:         1,359 bp
+  Read 2:         1,359 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          2,718 bp (100.0%)
+  Read 1:         1,359 bp
+  Read 2:         1,359 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.2_42_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.2_42_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.2_42_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.2_42_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.3_17_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ4697.3_17_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.3_17_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ4697.3_17_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.2_54_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.2_54_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.2_54_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.2_54_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.3_55_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/BAQ895.3_55_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.3_55_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/BAQ895.3_55_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.1_25_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.1_25_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.1_25_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.1_25_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.3_57_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.1.3_57_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.3_57_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.1.3_57_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.2_70_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.2_70_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.2_70_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.2_70_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.3_47_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1005.3_47_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.3_47_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1005.3_47_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.1_31_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.1_31_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.1_31_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.1_31_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.2_60_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.2_60_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.2_60_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.2_60_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.3_46_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1242.3_46_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.3_46_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1242.3_46_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.1_19_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.1_19_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.1_19_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.1_19_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.3_74_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN1609.3_74_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.3_74_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN1609.3_74_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.1_59_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.1_59_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.1_59_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.1_59_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.2_40_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.2_40_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.2_40_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.2_40_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (45.098 µs/read; 1.33 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                918
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           918 (100.0%)
+
+Total basepairs processed:       277,236 bp
+  Read 1:       138,618 bp
+  Read 2:       138,618 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        277,236 bp (100.0%)
+  Read 1:       138,618 bp
+  Read 2:       138,618 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.3_65_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.3_65_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.3_65_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.3_65_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.022 s (10945.439 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  2
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             2 (100.0%)
+
+Total basepairs processed:           604 bp
+  Read 1:           302 bp
+  Read 2:           302 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            604 bp (100.0%)
+  Read 1:           302 bp
+  Read 2:           302 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.1_61_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.1_61_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.1_61_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.1_61_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.026 s (12770.891 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  2
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             2 (100.0%)
+
+Total basepairs processed:           604 bp
+  Read 1:           302 bp
+  Read 2:           302 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            604 bp (100.0%)
+  Read 1:           302 bp
+  Read 2:           302 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.2_63_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.2_63_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.2_63_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.2_63_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.027 s (26836.157 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  1
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             1 (100.0%)
+
+Total basepairs processed:           302 bp
+  Read 1:           151 bp
+  Read 2:           151 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            302 bp (100.0%)
+  Read 1:           151 bp
+  Read 2:           151 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.3_56_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.3_56_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.3_56_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.3_56_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.024 s (4047.553 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  6
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             6 (100.0%)
+
+Total basepairs processed:         1,812 bp
+  Read 1:           906 bp
+  Read 2:           906 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          1,812 bp (100.0%)
+  Read 1:           906 bp
+  Read 2:           906 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.2_68_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.2_68_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.2_68_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.2_68_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.026 s (26153.564 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  1
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             1 (100.0%)
+
+Total basepairs processed:           302 bp
+  Read 1:           151 bp
+  Read 2:           151 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            302 bp (100.0%)
+  Read 1:           151 bp
+  Read 2:           151 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.3_66_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.3_66_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.3_66_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.3_66_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.025 s (8313.258 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  3
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             3 (100.0%)
+
+Total basepairs processed:           906 bp
+  Read 1:           453 bp
+  Read 2:           453 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            906 bp (100.0%)
+  Read 1:           453 bp
+  Read 2:           453 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.1_64_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.1_64_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.1_64_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.1_64_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.022 s (5433.381 µs/read; 0.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  4
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             4 (100.0%)
+
+Total basepairs processed:         1,208 bp
+  Read 1:           604 bp
+  Read 2:           604 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):          1,208 bp (100.0%)
+  Read 1:           604 bp
+  Read 2:           604 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.2_49_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.2_49_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.2_49_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.2_49_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.033 s (71.474 µs/read; 0.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                468
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           468 (100.0%)
+
+Total basepairs processed:       141,336 bp
+  Read 1:        70,668 bp
+  Read 2:        70,668 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        141,333 bp (100.0%)
+  Read 1:        70,665 bp
+  Read 2:        70,668 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	7.3	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.3_45_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.3_45_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.3_45_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.3_45_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (58.285 µs/read; 1.03 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                619
+  Read 1 with adapter:                       1 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           619 (100.0%)
+
+Total basepairs processed:       186,938 bp
+  Read 1:        93,469 bp
+  Read 2:        93,469 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        186,935 bp (100.0%)
+  Read 1:        93,466 bp
+  Read 2:        93,469 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	9.7	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.1_67_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.1_67_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.1_67_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.1_67_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+No reads processed!
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.2_69_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.2_69_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.2_69_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.2_69_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.021 s (21200.895 µs/read; 0.00 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                  1
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):             1 (100.0%)
+
+Total basepairs processed:           302 bp
+  Read 1:           151 bp
+  Read 2:           151 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):            302 bp (100.0%)
+  Read 1:           151 bp
+  Read 2:           151 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.1_58_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.1_58_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.1_58_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.1_58_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.024 s (364.780 µs/read; 0.16 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                 67
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):            67 (100.0%)
+
+Total basepairs processed:        20,234 bp
+  Read 1:        10,117 bp
+  Read 2:        10,117 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):         20,234 bp (100.0%)
+  Read 1:        10,117 bp
+  Read 2:        10,117 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.2_43_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.2_43_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.2_43_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.2_43_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.039 s (60.924 µs/read; 0.98 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                645
+  Read 1 with adapter:                       2 (0.3%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           645 (100.0%)
+
+Total basepairs processed:       194,790 bp
+  Read 1:        97,395 bp
+  Read 2:        97,395 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        194,784 bp (100.0%)
+  Read 1:        97,389 bp
+  Read 2:        97,395 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	10.1	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.2_40_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.2_40_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.2_40_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.2_40_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.3_65_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN2029.3_65_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.3_65_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN2029.3_65_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.1_61_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.1_61_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.1_61_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.1_61_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.2_63_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.2_63_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.2_63_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.2_63_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.3_56_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.1.3_56_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.3_56_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.1.3_56_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.2_68_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.2_68_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.2_68_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.2_68_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.3_66_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3008.3_66_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.3_66_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3008.3_66_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.1_64_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.1_64_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.1_64_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.1_64_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.2_49_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.2_49_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.2_49_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.2_49_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.3_45_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3153.3_45_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.3_45_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3153.3_45_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.1_67_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.1_67_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.1_67_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.1_67_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.2_69_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3184.2_69_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.2_69_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3184.2_69_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.1_58_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.1_58_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.1_58_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.1_58_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.2_43_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.2_43_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.2_43_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.2_43_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.3_48_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.3_48_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.3_48_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.3_48_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.030 s (106.403 µs/read; 0.56 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                280
+  Read 1 with adapter:                       1 (0.4%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           280 (100.0%)
+
+Total basepairs processed:        84,560 bp
+  Read 1:        42,280 bp
+  Read 2:        42,280 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):         84,557 bp (100.0%)
+  Read 1:        42,277 bp
+  Read 2:        42,280 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	4.4	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.2_50_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.2_50_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.2_50_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.2_50_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.046 s (44.090 µs/read; 1.36 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,039
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,039 (100.0%)
+
+Total basepairs processed:       313,778 bp
+  Read 1:       156,889 bp
+  Read 2:       156,889 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        313,775 bp (100.0%)
+  Read 1:       156,886 bp
+  Read 2:       156,889 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	16.2	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.3_5_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.3_5_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.3_5_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.3_5_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (36.360 µs/read; 1.65 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,122
+  Read 1 with adapter:                       4 (0.4%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,122 (100.0%)
+
+Total basepairs processed:       338,844 bp
+  Read 1:       169,422 bp
+  Read 2:       169,422 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        338,832 bp (100.0%)
+  Read 1:       169,410 bp
+  Read 2:       169,422 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 4 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4	17.5	0	4
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.1_39_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.1_39_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.1_39_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.1_39_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.033 s (45.336 µs/read; 1.32 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                730
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           730 (100.0%)
+
+Total basepairs processed:       220,460 bp
+  Read 1:       110,230 bp
+  Read 2:       110,230 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        220,457 bp (100.0%)
+  Read 1:       110,227 bp
+  Read 2:       110,230 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	11.4	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.2_53_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.2_53_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.2_53_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.2_53_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.028 s (147.108 µs/read; 0.41 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                193
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           193 (100.0%)
+
+Total basepairs processed:        58,286 bp
+  Read 1:        29,143 bp
+  Read 2:        29,143 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):         58,286 bp (100.0%)
+  Read 1:        29,143 bp
+  Read 2:        29,143 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.3_15_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.3_15_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.3_15_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.3_15_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (51.306 µs/read; 1.17 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                795
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           795 (100.0%)
+
+Total basepairs processed:       240,090 bp
+  Read 1:       120,045 bp
+  Read 2:       120,045 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        240,044 bp (100.0%)
+  Read 1:       120,042 bp
+  Read 2:       120,002 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	12.4	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+43	1	0.0	1	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.1_35_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.1_35_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.1_35_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.1_35_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.049 s (45.872 µs/read; 1.31 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,058
+  Read 1 with adapter:                       5 (0.5%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,058 (100.0%)
+
+Total basepairs processed:       319,516 bp
+  Read 1:       159,758 bp
+  Read 2:       159,758 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        319,497 bp (100.0%)
+  Read 1:       159,743 bp
+  Read 2:       159,754 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 5 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5	16.5	0	5
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	1	4.1	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.2_7_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.2_7_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.2_7_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.2_7_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.052 s (33.806 µs/read; 1.77 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,536
+  Read 1 with adapter:                       3 (0.2%)
+  Read 2 with adapter:                       9 (0.6%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,536 (100.0%)
+
+Total basepairs processed:       463,872 bp
+  Read 1:       231,936 bp
+  Read 2:       231,936 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        463,836 bp (100.0%)
+  Read 1:       231,927 bp
+  Read 2:       231,909 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 3 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	24.0	0	3
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 9 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9	24.0	0	9
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.3_21_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.3_21_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.3_21_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.3_21_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.043 s (37.102 µs/read; 1.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,159
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,159 (100.0%)
+
+Total basepairs processed:       350,018 bp
+  Read 1:       175,009 bp
+  Read 2:       175,009 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        350,012 bp (100.0%)
+  Read 1:       175,003 bp
+  Read 2:       175,009 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	18.1	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.1_37_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.1_37_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.1_37_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.1_37_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.042 s (42.185 µs/read; 1.42 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,000
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,000 (100.0%)
+
+Total basepairs processed:       302,000 bp
+  Read 1:       151,000 bp
+  Read 2:       151,000 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        301,997 bp (100.0%)
+  Read 1:       150,997 bp
+  Read 2:       151,000 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	15.6	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.2_33_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.2_33_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.2_33_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.2_33_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.047 s (48.417 µs/read; 1.24 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                976
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           976 (100.0%)
+
+Total basepairs processed:       294,752 bp
+  Read 1:       147,376 bp
+  Read 2:       147,376 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        294,746 bp (100.0%)
+  Read 1:       147,373 bp
+  Read 2:       147,373 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	15.2	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	15.2	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.3_16_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.3_16_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.3_16_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.3_16_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.048 s (59.311 µs/read; 1.01 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                802
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       1 (0.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           802 (100.0%)
+
+Total basepairs processed:       242,204 bp
+  Read 1:       121,102 bp
+  Read 2:       121,102 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        242,201 bp (100.0%)
+  Read 1:       121,102 bp
+  Read 2:       121,099 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 0 times
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	12.5	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.2_3_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.2_3_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.2_3_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.2_3_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.044 s (34.850 µs/read; 1.72 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,266
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       2 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,266 (100.0%)
+
+Total basepairs processed:       382,332 bp
+  Read 1:       191,166 bp
+  Read 2:       191,166 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        382,319 bp (100.0%)
+  Read 1:       191,160 bp
+  Read 2:       191,159 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	19.8	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	19.8	0	1
+4	1	4.9	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.3_22_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.3_22_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.3_22_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.3_22_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.050 s (37.691 µs/read; 1.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,316
+  Read 1 with adapter:                       3 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,316 (100.0%)
+
+Total basepairs processed:       397,432 bp
+  Read 1:       198,716 bp
+  Read 2:       198,716 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        397,423 bp (100.0%)
+  Read 1:       198,707 bp
+  Read 2:       198,716 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 3 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	20.6	0	3
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.3_48_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.1.3_48_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.3_48_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.1.3_48_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.2_50_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.2_50_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.2_50_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.2_50_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.3_5_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3259.3_5_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.3_5_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3259.3_5_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.1_39_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.1_39_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.1_39_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.1_39_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.2_53_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.2_53_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.2_53_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.2_53_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.3_15_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3346.3_15_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.3_15_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3346.3_15_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.1_35_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.1_35_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.1_35_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.1_35_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.2_7_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.2_7_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.2_7_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.2_7_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.3_21_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3428.3_21_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.3_21_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3428.3_21_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.1_37_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.1_37_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.1_37_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.1_37_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.2_33_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.2_33_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.2_33_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.2_33_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.3_16_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.1.3_16_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.3_16_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.1.3_16_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.2_3_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.2_3_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.2_3_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.2_3_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.3_22_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3533.3_22_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.3_22_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3533.3_22_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.1_44_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.1_44_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.1_44_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.1_44_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.046 s (42.729 µs/read; 1.40 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,087
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                      18 (1.7%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,087 (100.0%)
+
+Total basepairs processed:       328,274 bp
+  Read 1:       164,137 bp
+  Read 2:       164,137 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        328,214 bp (100.0%)
+  Read 1:       164,131 bp
+  Read 2:       164,083 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	17.0	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 18 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	18	17.0	0	18
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.2_11_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.2_11_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.2_11_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.2_11_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.044 s (42.241 µs/read; 1.42 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,044
+  Read 1 with adapter:                       3 (0.3%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,044 (100.0%)
+
+Total basepairs processed:       315,288 bp
+  Read 1:       157,644 bp
+  Read 2:       157,644 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        315,279 bp (100.0%)
+  Read 1:       157,635 bp
+  Read 2:       157,644 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 3 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3	16.3	0	3
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.3_38_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.3_38_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.3_38_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.3_38_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.036 s (47.872 µs/read; 1.25 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                753
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):           753 (100.0%)
+
+Total basepairs processed:       227,406 bp
+  Read 1:       113,703 bp
+  Read 2:       113,703 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        227,403 bp (100.0%)
+  Read 1:       113,700 bp
+  Read 2:       113,703 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	11.8	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.2_29_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.2_29_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.2_29_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.2_29_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.041 s (41.293 µs/read; 1.45 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,003
+  Read 1 with adapter:                       1 (0.1%)
+  Read 2 with adapter:                       2 (0.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,003 (100.0%)
+
+Total basepairs processed:       302,906 bp
+  Read 1:       151,453 bp
+  Read 2:       151,453 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        302,895 bp (100.0%)
+  Read 1:       151,450 bp
+  Read 2:       151,445 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 1 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	15.7	0	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	15.7	0	1
+5	1	1.0	0	1
+This is cutadapt 4.5 with Python 3.8.15
+Command line parameters: --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.3_12_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.3_12_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.3_12_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.3_12_L001_R2_001.fastq.gz
+Processing paired-end reads on 2 cores ...
+Finished in 0.051 s (38.643 µs/read; 1.55 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              1,321
+  Read 1 with adapter:                       2 (0.2%)
+  Read 2 with adapter:                       0 (0.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):         1,321 (100.0%)
+
+Total basepairs processed:       398,942 bp
+  Read 1:       199,471 bp
+  Read 2:       199,471 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):        398,936 bp (100.0%)
+  Read 1:       199,465 bp
+  Read 2:       199,471 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTGYCAGCMGCCGCGGTAA; Type: regular 5'; Length: 19; Trimmed: 2 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	20.6	0	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: GGACTACNVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 0 times
+cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.1_44_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.1_44_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.1_44_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.1_44_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.2_11_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.2_11_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.2_11_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.2_11_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.3_38_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.1.3_38_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.3_38_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.1.3_38_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.2_29_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.2_29_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.2_29_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.2_29_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 2 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.3_12_L001_R1_001.fastq.gz -p /tmp/q2-CasavaOneEightSingleLanePerSampleDirFmt-6_31jo1_/YUN3856.3_12_L001_R2_001.fastq.gz --front GTGYCAGCMGCCGCGGTAA -G GGACTACNVGGGTWTCTAAT /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.3_12_L001_R1_001.fastq.gz /tmp/qiime2/juantejedor/data/83295748-9b60-47e7-abeb-5e73edcf14c3/data/YUN3856.3_12_L001_R2_001.fastq.gz
+
+Saved SampleData[PairedEndSequencesWithQuality] to: 04-results/01_PE/trimmed_subsampled_demuxed.qza

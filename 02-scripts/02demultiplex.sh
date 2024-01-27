@@ -27,3 +27,33 @@ qiime demux emp-single \
 --o-error-correction-details 04-results/02_SE/errors/errors_demuxed.qza
 #Saved SampleData[SequencesWithQuality] to: 04-results/02_SE/demuxed.qza
 #Saved ErrorCorrectionDetails to: 04-results/02_SE/errors/errors_demuxed.qza
+
+
+# Para trabajar utilizando menos recursos, usaremos un submuestreo del total.
+
+######## SUBSAMPLE DE READS ########
+
+# Nos quedamos sólo con el 10% de reads de cada archivo demultiplexado. 
+# Para PE
+qiime demux subsample-paired \
+--i-sequences 04-results/01_PE/demuxed.qza \
+--p-fraction 0.1 \
+--o-subsampled-sequences 04-results/01_PE/subsampled_demuxed.qza
+# Saved SampleData[PairedEndSequencesWithQuality] to: 04-results/01_PE/subsampled_demuxed.qza
+# Guardamos los resultados.
+qiime demux summarize \
+--i-data 04-results/01_PE/subsampled_demuxed.qza \
+--o-visualization 04-results/01_PE/subsampled_demuxed.qzv
+qiime tools export --input-path 04-results/01_PE/subsampled_demuxed.qzv --output-path 05-reports/01_PE/demux
+
+# Para SE
+qiime demux subsample-single \
+--i-sequences 04-results/02_SE/demuxed.qza \
+--p-fraction 0.1 \
+--o-subsampled-sequences 04-results/02_SE/subsampled_demuxed.qza
+# Saved SampleData[SequencesWithQuality] to: 04-results/02_SE/subsampled_demuxed.qza
+# Guardamos los resultados.
+qiime demux summarize \
+--i-data 04-results/02_SE/subsampled_demuxed.qza \
+--o-visualization 04-results/02_SE/subsampled_demuxed.qzv
+qiime tools export --input-path 04-results/02_SE/subsampled_demuxed.qzv --output-path 05-reports/02_SE/demux
