@@ -44,7 +44,9 @@ qiime demux subsample-paired \
 qiime demux summarize \
 --i-data 04-results/01_PE/subsampled_demuxed.qza \
 --o-visualization 04-results/01_PE/subsampled_demuxed.qzv
-qiime tools export --input-path 04-results/01_PE/subsampled_demuxed.qzv --output-path 05-reports/01_PE/demux
+qiime tools export \
+--input-path 04-results/01_PE/subsampled_demuxed.qzv \
+--output-path 05-reports/01_PE/demux
 
 # Para SE
 qiime demux subsample-single \
@@ -56,4 +58,6 @@ qiime demux subsample-single \
 qiime demux summarize \
 --i-data 04-results/02_SE/subsampled_demuxed.qza \
 --o-visualization 04-results/02_SE/subsampled_demuxed.qzv
-qiime tools export --input-path 04-results/02_SE/subsampled_demuxed.qzv --output-path 05-reports/02_SE/demux
+qiime tools export \
+--input-path 04-results/02_SE/subsampled_demuxed.qzv \
+--output-path 05-reports/02_SE/demux
