@@ -1,0 +1,32 @@
+Warning message:
+package 'optparse' was built under R version 4.2.3 
+R version 4.2.2 (2022-10-31) 
+Loading required package: Rcpp
+DADA2: 1.26.0 / Rcpp: 1.0.11 / RcppParallel: 5.1.6 
+2) Filtering The filter removed all reads: /tmp/tmp2aocnj31/filt_f/BAQ1370.1.2_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/BAQ1370.1.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/BAQ1370.3_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/BAQ1370.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/BAQ1552.2_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/BAQ1552.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/BAQ895.3_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/BAQ895.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/YUN1609.3_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/YUN1609.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/YUN2029.3_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/YUN2029.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/YUN3008.1.2_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/YUN3008.1.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/YUN3184.1_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/YUN3184.1_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2aocnj31/filt_f/YUN3184.2_L001_R1_001.fastq.gz and /tmp/tmp2aocnj31/filt_r/YUN3184.2_L001_R2_001.fastq.gz not written.
+Some input samples had no reads pass the filter.
+x.x.x..........................x........x..x.x......xx.....................
+3) Learning Error Rates
+6528000 total bases in 43520 reads from 66 samples will be used for learning the error rates.
+5222400 total bases in 43520 reads from 66 samples will be used for learning the error rates.
+3) Denoise samples ..................................................................
+..................................................................
+5) Remove chimeras (method = consensus)
+6) Report read numbers through the pipeline
+7) Write output
+Running external command line application(s). This may print messages to stdout and/or stderr.
+The command(s) being run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
+
+Command: run_dada.R --input_directory /tmp/tmp2aocnj31/forward --input_directory_reverse /tmp/tmp2aocnj31/reverse --output_path /tmp/tmp2aocnj31/output.tsv.biom --output_track /tmp/tmp2aocnj31/track.tsv --filtered_directory /tmp/tmp2aocnj31/filt_f --filtered_directory_reverse /tmp/tmp2aocnj31/filt_r --truncation_length 150 --truncation_length_reverse 120 --trim_left 0 --trim_left_reverse 0 --max_expected_errors 2.0 --max_expected_errors_reverse 2.0 --truncation_quality_score 2 --min_overlap 12 --pooling_method independent --chimera_method consensus --min_parental_fold 1.0 --allow_one_off False --num_threads 2 --learn_min_reads 1000000
+
+Saved FeatureTable[Frequency] to: 04-results/01_PE/denoising/table_ASVs_r120.qza
+Saved FeatureData[Sequence] to: 04-results/01_PE/denoising/sequences_ASVs_r120.qza
+Saved SampleData[DADA2Stats] to: 04-results/01_PE/denoising/denoising_stats_r120.qza

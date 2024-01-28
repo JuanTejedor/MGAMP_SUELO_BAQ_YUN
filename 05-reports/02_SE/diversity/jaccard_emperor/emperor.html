@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Emperor</title>
+    <!-- core dependencies that are otherwise included via the jupyter notebook -->
+<script src="./vendor/js/require-2.1.22.min.js"></script>
+<script src="./vendor/js/jquery-2.1.4.min.js"></script>
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+
+if ($("#emperor-css").length == 0){{
+    $("head").append([
+
+        '<link id="emperor-css" rel="stylesheet" type="text/css" href="./css/emperor.css">',
+        '<link rel="stylesheet" type="text/css" href="./vendor/css/jquery-ui.min.css">',
+        '<link rel="stylesheet" type="text/css" href="./vendor/css/slick.grid.min.css">',
+        '<link rel="stylesheet" type="text/css" href="./vendor/css/spectrum.min.css">',
+        '<link rel="stylesheet" type="text/css" href="./vendor/css/chosen.min.css">',
+        '<link rel="stylesheet" type="text/css" href="./vendor/css/jquery.contextMenu.min.css">'
+    ]);
+}}
+</script>
+
+
+    <style>
+      #emperor-notebook-0x3e221b68 {
+        height:100vh !important;
+        padding: 0px !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='emperor-notebook-0x3e221b68' style="position: relative; width:100%; height:500px;">
+  <div class='loading' style="position: absolute;top: 50%;left: 50%;margin-left: -229px; margin-top: -59px; z-index: 10000;height:118px;width:458px;padding:0px"><img src='./img/emperor.png' alt='Emperor resources missing. Expected them to be found in .'></div>
+</div>
+</div>
+    <script type="text/javascript">
+    // When running in the Jupyter notebook we've encountered version conflicts
+// with some dependencies. So instead of polluting the global require context,
+// we define a new context.
+var emperorRequire = require.config({
+'context': 'emperor',
+// the left side is the module name, and the right side is the path
+// relative to the baseUrl attribute, do NOT include the .js extension
+'paths': {
+  /* jQuery */
+  'jquery': './vendor/js/jquery-2.1.4.min',
+  'jqueryui': './vendor/js/jquery-ui.min',
+  'jquery_drag': './vendor/js/jquery.event.drag-2.2.min',
+
+  /* jQuery plugins */
+  'chosen': './vendor/js/chosen.jquery.min',
+  'spectrum': './vendor/js/spectrum.min',
+  'position': './vendor/js/jquery.ui.position.min',
+  'contextmenu': './vendor/js/jquery.contextMenu.min',
+
+  /* other libraries */
+  'underscore': './vendor/js/underscore-min',
+  'chroma': './vendor/js/chroma.min',
+  'filesaver': './vendor/js/FileSaver.min',
+  'blob': './vendor/js/Blob',
+  'canvastoblob': './vendor/js/canvas-toBlob',
+  'd3': './vendor/js/d3.min',
+
+  /* THREE.js and plugins */
+  'three': './vendor/js/three.min',
+  'orbitcontrols': './vendor/js/three.js-plugins/OrbitControls',
+  'projector': './vendor/js/three.js-plugins/Projector',
+  'svgrenderer': './vendor/js/three.js-plugins/SVGRenderer',
+  'canvasrenderer': './vendor/js/three.js-plugins/CanvasRenderer',
+  'selectionbox': './vendor/js/three.js-plugins/SelectionBox',
+  'selectionhelper': './vendor/js/three.js-plugins/SelectionHelper',
+
+  /* SlickGrid */
+  'slickcore': './vendor/js/slick.core.min',
+  'slickgrid': './vendor/js/slick.grid.min',
+  'slickformatters': './vendor/js/slick.editors.min',
+  'slickeditors': './vendor/js/slick.formatters.min',
+  'slickdataview': './vendor/js/slick.dataview.min',
+
+  /* Emperor's objects */
+  'util': './js/util',
+  'model': './js/model',
+  'multi-model': './js/multi-model',
+  'view': './js/view',
+  'controller': './js/controller',
+  'draw': './js/draw',
+  'scene3d': './js/sceneplotview3d',
+  'shapes': './js/shapes',
+  'animationdirector': './js/animate',
+  'trajectory': './js/trajectory',
+  'uistate': './js/ui-state',
+
+  /* controllers */
+  'abcviewcontroller': './js/abc-view-controller',
+  'viewcontroller': './js/view-controller',
+  'colorviewcontroller': './js/color-view-controller',
+  'visibilitycontroller': './js/visibility-controller',
+  'opacityviewcontroller': './js/opacity-view-controller',
+  'scaleviewcontroller': './js/scale-view-controller',
+  'shapecontroller': './js/shape-controller',
+  'axescontroller': './js/axes-controller',
+  'animationscontroller': './js/animations-controller',
+
+  /* editors */
+  'shape-editor': './js/shape-editor',
+  'color-editor': './js/color-editor',
+  'scale-editor': './js/scale-editor'
+
+},
+/*
+   Libraries that are not AMD compatible need shim to declare their
+   dependencies.
+ */
+'shim': {
+  'jquery_drag': {
+    'deps': ['jquery', 'jqueryui']
+  },
+  'chosen': {
+    'deps': ['jquery'],
+    'exports': 'jQuery.fn.chosen'
+  },
+  'contextmenu' : {
+    'deps': ['jquery', 'jqueryui', 'position']
+  },
+  'filesaver' : {
+    'deps': ['blob']
+  },
+  'canvastoblob' : {
+    'deps': ['blob']
+  },
+  'slickcore': ['jqueryui'],
+  'slickgrid': ['slickcore', 'jquery_drag', 'slickformatters', 'slickeditors',
+                'slickdataview']
+}
+});
+
+emperorRequire(
+["jquery", "model", "controller"],
+function($, model, EmperorController) {
+  var DecompositionModel = model.DecompositionModel;
+
+  var div = $('#emperor-notebook-0x3e221b68');
+
+  var data = {"info": null, "plot": {"decomposition": {"axes_names": [0, 1, 2, 3, 4], "ci": null, "coordinates": [[-0.3022506509826904, 0.08473236101518754, -0.14331539028260412, 0.09525913158485937, 0.0305360187752832], [-0.38035610553958915, 0.31394384791531754, -0.35683350152981197, 0.5259761461371397, -0.3408374753116994], [-0.35841323707900213, 0.20501607818352516, -0.19080302772930927, 0.5056777996908332, 0.18748332795929926], [-0.4468625995280196, 0.2869391895208304, -0.30311863930907346, 0.7659618703846635, 0.41627208013387046], [-0.5727261037530199, 0.19278486138755904, -0.2801721306352593, 0.6126459438568369, 0.39721742729750575], [-0.5989848905606385, 0.0427209288406704, -0.10111994213676968, 0.6625371904189192, 0.5289161285903557], [-0.6253650889461851, -0.06264620754695571, -0.04897185262156098, 0.3200887479666191, 0.4062164666865432], [0.6230041725875494, -0.20531645433179965, 0.5866371381431367, 0.36473731234867773, -0.25777822668100664], [-0.5603169824488046, -0.225786567281811, 0.04822479434543949, -0.07976806291523263, 0.04276931025138595], [-0.354944399000453, -0.02170588898313431, 0.0181722723218809, -0.1312611157817384, -0.08280760979157849], [0.09447529994774288, -0.09947235825510843, 0.09025960447667071, 0.18993334196626493, -0.31090244673776807], [0.1913830137350703, 0.3219009063737163, -0.07367008413394009, 0.013523090370659054, 0.2826053325195797], [-0.06437866815331755, -0.13812303135293244, 0.24972310383424343, 0.12583957511235236, -0.4073630388607662], [0.3975444323934621, -0.07280280936734947, 0.9782741223244831, 0.2717505897996379, 0.2350021995476105], [0.7524228594191041, -0.21980480272920788, 0.8351580504873517, 0.31243082141409884, -0.0425358639056746], [0.48204449251271364, -0.28913092914560623, 0.4799160894248511, 0.2589566828849272, -0.15937882484451382], [0.29258588140384695, -0.01791256144491939, 0.8384433338833929, 0.2379011052933452, 0.30115298706409105], [0.7249084724836466, -0.22129010772599944, 0.5499696667945175, 0.22691873603133728, 0.21648009063197743], [0.758963664670795, -0.9609514387986907, -0.8181198850322488, -0.05180262537713977, 0.10178444700148849], [0.7661626019230745, -0.9603298953110291, -0.824245468503213, -0.03924083346198874, 0.11353225274350633], [0.7888629947739432, -1.0, -0.8025666369977651, -0.04885601325204339, 0.014842240739416972], [-0.2516366026588791, -0.16486308259737753, 0.21806320929771716, -0.0603455149291259, 0.28117160699295707], [-0.375378158702992, -0.27809865724835975, 0.25603458869339296, -0.4017126157311791, 0.019346117673139086], [-0.567340115403288, -0.28614086096142866, 0.19221570116615397, -0.41268374738483316, -0.127091056607062], [-0.7327501731103542, -0.35065312294758527, 0.20385647409496888, -0.5773212429526283, 0.26830098042067957], [-0.6833362338408735, -0.45682649314953233, 0.24182499314322203, -0.8297375522569416, 0.23374705682842906], [-0.6305788408307099, -0.4968108739793949, 0.19122167488693242, -0.836279266410985, 0.3049816752771296], [-0.2070634053519694, 0.0004017557449123914, -0.30215146835425555, 0.36992837565004916, -0.957383193283498], [-0.11556327663452273, 0.08275141606029252, -0.003375718763834562, 0.06082221301524287, -0.5298747236938018], [-0.3361354179706977, 0.08668872376920993, -0.11683180891319252, 0.019629836139225188, -0.5474007620492282], [-0.5552022972666348, -0.04779007844521391, -0.24698190588331756, 0.518266256760421, -0.39448783618003586], [-0.3774535796329245, -0.162581882945699, -0.1139497064870383, -0.1672741216933362, -0.8446548171897517], [0.18342683338249624, 0.7543549062388226, -0.2700855295182062, -0.5429791059780029, 0.15708916043854587], [0.08086933395365861, 0.6914062797821886, -0.13555042346768506, -0.31246959342515196, -0.03179295313322292], [0.35560446452277034, 0.7730917655494682, -0.13479656155651354, -0.5158815571414498, -0.08895593935587147], [-0.11790029782548839, -0.15328256777656396, 0.22431931317632534, 0.06230995304386255, 0.20961230551724333], [0.31586192178173206, 0.27368594228802845, -0.42030491211642873, -0.06553055675430021, 0.4342447075258497], [0.39201859745996775, 0.39121890791084335, -0.32128679073252203, -0.12688535713178303, 0.5150179173284315], [0.4000563785293019, 0.7147612554804248, -0.2612895719192686, -0.2667936104311787, 0.02671966190263191], [0.53608603850327, 0.6671183899470399, -0.23985429121562998, -0.14425868061387628, 0.1598558536235744], [0.09678469629489622, -0.029836731320444627, -0.1304979473263062, 0.09250298446709337, 0.32418155768359613], [0.5313538530158751, 0.6038763320286089, 0.06270045104910749, -0.3838420155868749, -0.16287328560592776], [-0.30135746732144875, -0.05241647692411437, 0.10556420668503894, -0.2539036370112794, -0.30229603007917744], [0.35146856570541024, 0.19952901167428497, 0.18614538405698455, -0.14858903027893472, -0.2101771996825811], [0.40040602354217025, 0.28765102085932565, 0.08316902287994186, -0.2161818478370564, -0.4104876281609564]], "edges": [], "percents_explained": [5.945950270086747, 4.5824732656178515, 4.042964514609908, 3.6772816503814933, 3.139787800199904], "sample_ids": ["BAQ2420.1.1", "BAQ2420.1.2", "BAQ2420.1.3", "BAQ2420.2", "BAQ2420.3", "BAQ2462.1", "BAQ2462.2", "BAQ2687.1", "BAQ2687.2", "BAQ2687.3", "BAQ3473.1", "BAQ3473.2", "BAQ3473.3", "BAQ4166.1.1", "BAQ4166.1.2", "BAQ4166.1.3", "BAQ4166.2", "BAQ4166.3", "BAQ4697.1", "BAQ4697.2", "BAQ4697.3", "YUN1005.1.1", "YUN1242.1", "YUN1242.3", "YUN1609.1", "YUN2029.2", "YUN3153.3", "YUN3259.1.2", "YUN3259.2", "YUN3259.3", "YUN3346.1", "YUN3346.3", "YUN3428.1", "YUN3428.2", "YUN3428.3", "YUN3533.1.1", "YUN3533.1.2", "YUN3533.1.3", "YUN3533.2", "YUN3533.3", "YUN3856.1.1", "YUN3856.1.2", "YUN3856.1.3", "YUN3856.2", "YUN3856.3"]}, "metadata": [["BAQ2420.1.1", "ACACAGTCCTGA", "CCGGACTACHVGGGTWTCTAAT", "2420.0", "0.35", "7.4", "H", "Baquedano", "BAQ2420", "1.0", "9.33", "nan", "nan", "82.54", "100.0", "41.135", "46.77", "22.45", "28.297", "13.294", "no", "0.0", "BAQ2420.1.1"], ["BAQ2420.1.2", "ATTATACGGCGC", "CCGGACTACHVGGGTWTCTAAT", "2420.0", "0.108", "11.42", "H", "Baquedano", "BAQ2420", "2.0", "9.36", "166.0", "0.075", "82.54", "100.0", "41.135", "46.77", "22.45", "28.297", "13.294", "no", "0.0", "BAQ2420.1.2"], ["BAQ2420.1.3", "ATTCAGATGGCA", "CCGGACTACHVGGGTWTCTAAT", "2420.0", "0.132", "10.0", "H", "Baquedano", "BAQ2420", "3.0", "8.9", "nan", "nan", "82.54", "100.0", "41.135", "46.77", "22.45", "28.297", "13.294", "no", "0.0", "BAQ2420.1.3"], ["BAQ2420.2", "TAAACGCGACTC", "CCGGACTACHVGGGTWTCTAAT", "2420.0", "0.089", "10.06", "A", "Baquedano", "BAQ2420", "2.0", "9.36", "337.0", "0.075", "82.54", "100.0", "41.135", "46.77", "22.45", "28.297", "13.294", "no", "0.0", "BAQ2420.2"], ["BAQ2420.3", "CCTCGGGTACTA", "CCGGACTACHVGGGTWTCTAAT", "2420.0", "0.083", "15.92", "C", "Baquedano", "BAQ2420", "2.0", "9.36", "574.0", "0.075", "82.54", "100.0", "41.135", "46.77", "22.45", "28.297", "13.294", "no", "0.0", "BAQ2420.3"], ["BAQ2462.1", "TTCACCTGTATC", "CCGGACTACHVGGGTWTCTAAT", "2462.0", "1.166", "15.29", "H", "Baquedano", "BAQ2462", "2.0", "8.35", "173.0", "0.506", "69.08", "98.396", "32.558", "0.21", "21.83", "29.024", "12.971", "no", "0.0", "BAQ2462.1"], ["BAQ2462.2", "CTCCAGGTCATG", "CCGGACTACHVGGGTWTCTAAT", "2462.0", "0.049", "10.39", "H", "Baquedano", "BAQ2462", "2.0", "8.35", "331.0", "0.506", "69.08", "98.396", "32.558", "0.21", "21.83", "29.024", "12.971", "no", "0.0", "BAQ2462.2"], ["BAQ2687.1", "GTGGCCTACTAC", "CCGGACTACHVGGGTWTCTAAT", "2687.0", "1.223", "1.24", "A", "Baquedano", "BAQ2687", "2.0", "8.35", "554.0", "0.131", "73.21", "100.0", "20.87", "43.48", "18.2", "25.0", "10.67", "yes", "0.1", "BAQ2687.1"], ["BAQ2687.2", "TTCCCTTCTCCG", "CCGGACTACHVGGGTWTCTAAT", "2687.0", "0.251", "17.53", "C", "Baquedano", "BAQ2687", "2.0", "8.35", "350.0", "0.131", "73.21", "100.0", "20.87", "43.48", "18.2", "25.0", "10.67", "yes", "0.1", "BAQ2687.2"], ["BAQ2687.3", "CATTTGACGACG", "CCGGACTACHVGGGTWTCTAAT", "2687.0", "1.176", "12.1", "E", "Baquedano", "BAQ2687", "2.0", "8.35", "400.0", "0.131", "73.21", "100.0", "20.87", "43.48", "18.2", "25.0", "10.67", "yes", "0.1", "BAQ2687.3"], ["BAQ3473.1", "AAGTGAAGCGAG", "CCGGACTACHVGGGTWTCTAAT", "3473.0", "16.374", "1.29", "C", "Baquedano", "BAQ3473", "2.0", "7.93", "3675.0", "0.42", "82.05", "100.0", "42.09", "35.37", "13.46", "20.69", "5.12", "yes", "1.2", "BAQ3473.1"], ["BAQ3473.2", "TGCCGCCGTAAT", "CCGGACTACHVGGGTWTCTAAT", "3473.0", "5.17", "11.05", "B", "Baquedano", "BAQ3473", "2.0", "7.93", "838.0", "0.42", "82.05", "100.0", "42.09", "35.37", "13.46", "20.69", "5.12", "yes", "1.2", "BAQ3473.2"], ["BAQ3473.3", "AACCTCGGATAA", "CCGGACTACHVGGGTWTCTAAT", "3473.0", "0.91", "4.41", "C", "Baquedano", "BAQ3473", "2.0", "7.93", "16449.0", "0.42", "82.05", "100.0", "42.09", "35.37", "13.46", "20.69", "5.12", "yes", "1.2", "BAQ3473.3"], ["BAQ4166.1.1", "GTGCTTGTGTAG", "CCGGACTACHVGGGTWTCTAAT", "4166.0", "33.492", "3.16", "C", "Baquedano", "BAQ4166", "1.0", "5.64", "nan", "nan", "100.0", "100.0", "100.0", "100.0", "9.41", "17.54", "1.42", "yes", "7.1", "BAQ4166.1.1"], ["BAQ4166.1.2", "CAACTAGACTCG", "CCGGACTACHVGGGTWTCTAAT", "4166.0", "16.086", "18.25", "B", "Baquedano", "BAQ4166", "2.0", "7.22", "2085.0", "0.084", "100.0", "100.0", "100.0", "100.0", "9.41", "17.54", "1.42", "yes", "7.1", "BAQ4166.1.2"], ["BAQ4166.1.3", "AGTGCCCTTGGT", "CCGGACTACHVGGGTWTCTAAT", "4166.0", "14.532", "0.55", "C", "Baquedano", "BAQ4166", "3.0", "7.41", "nan", "nan", "100.0", "100.0", "100.0", "100.0", "9.41", "17.54", "1.42", "yes", "7.1", "BAQ4166.1.3"], ["BAQ4166.2", "GGAACGACGTGA", "CCGGACTACHVGGGTWTCTAAT", "4166.0", "2.958", "0.12", "C", "Baquedano", "BAQ4166", "2.0", "7.22", "3692.0", "0.084", "100.0", "100.0", "100.0", "100.0", "9.41", "17.54", "1.42", "yes", "7.1", "BAQ4166.2"], ["BAQ4166.3", "TGTCAGCTGTCG", "CCGGACTACHVGGGTWTCTAAT", "4166.0", "28.92", "0.26", "C", "Baquedano", "BAQ4166", "2.0", "7.22", "2271.0", "0.084", "100.0", "100.0", "100.0", "100.0", "9.41", "17.54", "1.42", "yes", "7.1", "BAQ4166.3"], ["BAQ4697.1", "CTGGTGCTGAAT", "CCGGACTACHVGGGTWTCTAAT", "4697.0", "10.044", "1.88", "C", "Baquedano", "BAQ4697", "2.0", "7.44", "424.0", "0.055", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "yes", "0.1", "BAQ4697.1"], ["BAQ4697.2", "GACAGAGGTGCA", "CCGGACTACHVGGGTWTCTAAT", "4697.0", "5.864", "1.22", "B", "Baquedano", "BAQ4697", "2.0", "7.44", "531.0", "0.055", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "yes", "0.1", "BAQ4697.2"], ["BAQ4697.3", "TCAGACCAACTG", "CCGGACTACHVGGGTWTCTAAT", "4697.0", "8.264", "1.39", "C", "Baquedano", "BAQ4697", "2.0", "7.44", "631.0", "0.055", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "yes", "0.1", "BAQ4697.3"], ["YUN1005.1.1", "ACGTAACCACGT", "CCGGACTACHVGGGTWTCTAAT", "1005.0", "0.103", "13.17", "I", "Yungay", "YUN1005", "1.0", "7.54", "nan", "nan", "20.7", "31.011", "16.343", "0.0", "22.59", "26.26", "16.51", "no", "0.0", "YUN1005.1.1"], ["YUN1242.1", "TGTCCGTGGATC", "CCGGACTACHVGGGTWTCTAAT", "1242.0", "0.228", "19.2", "K", "Yungay", "YUN1242", "2.0", "9.0", "226.0", "1.845", "20.9", "36.46", "16.96", "0.0", "23.61", "27.62", "18.33", "no", "0.0", "YUN1242.1"], ["YUN1242.3", "GTTGGTTGGCAT", "CCGGACTACHVGGGTWTCTAAT", "1242.0", "0.05", "15.61", "K", "Yungay", "YUN1242", "2.0", "9.0", "452.0", "1.845", "20.9", "36.46", "16.96", "0.0", "23.61", "27.62", "18.33", "no", "0.0", "YUN1242.3"], ["YUN1609.1", "TTCCACACGTGG", "CCGGACTACHVGGGTWTCTAAT", "1609.0", "0.031", "6.42", "B", "Yungay", "YUN1609", "2.0", "8.0", "361.0", "0.427", "17.18", "50.4", "12.53", "0.0", "21.47", "25.39", "16.1", "no", "0.0", "YUN1609.1"], ["YUN2029.2", "TGGAGAGGAGAT", "CCGGACTACHVGGGTWTCTAAT", "2029.0", "0.232", "16.71", "B", "Yungay", "YUN2029", "2.0", "7.89", "241.0", "0.067", "28.79", "52.55", "21.76", "0.0", "17.85", "24.16", "10.21", "no", "0.0", "YUN2029.2"], ["YUN3153.3", "GGAAGAAGTAGC", "CCGGACTACHVGGGTWTCTAAT", "3153.0", "0.22", "18.41", "B", "Yungay", "YUN3153", "2.0", "7.6", "391.0", "2.26", "59.69", "93.15", "32.12", "0.0", "12.5", "19.62", "3.48", "no", "0.0", "YUN3153.3"], ["YUN3259.1.2", "AGACAAGCTTCC", "CCGGACTACHVGGGTWTCTAAT", "3259.0", "1.543", "16.92", "B", "Yungay", "YUN3259", "2.0", "8.1", "419.0", "0.133", "93.57", "100.0", "69.04", "64.69", "15.28", "23.65", "6.31", "yes", "2.4", "YUN3259.1.2"], ["YUN3259.2", "TCACTTGGTGCG", "CCGGACTACHVGGGTWTCTAAT", "3259.0", "1.935", "12.11", "D", "Yungay", "YUN3259", "2.0", "8.1", "342.0", "0.133", "93.57", "100.0", "69.04", "64.69", "15.28", "23.65", "6.31", "yes", "2.4", "YUN3259.2"], ["YUN3259.3", "TTATGTACGGCG", "CCGGACTACHVGGGTWTCTAAT", "3259.0", "3.53", "16.74", "D", "Yungay", "YUN3259", "2.0", "8.1", "539.0", "0.133", "93.57", "100.0", "69.04", "64.69", "15.28", "23.65", "6.31", "yes", "2.4", "YUN3259.3"], ["YUN3346.1", "GAGATACAGTTC", "CCGGACTACHVGGGTWTCTAAT", "3346.0", "0.314", "16.88", "D", "Yungay", "YUN3346", "2.0", "7.1", "429.0", "0.044", "87.32", "100.0", "57.8", "33.13", "15.89", "23.96", "6.89", "yes", "0.01", "YUN3346.1"], ["YUN3346.3", "GATCTAATCGAG", "CCGGACTACHVGGGTWTCTAAT", "3346.0", "1.218", "17.14", "D", "Yungay", "YUN3346", "2.0", "7.1", "387.0", "0.044", "87.32", "100.0", "57.8", "33.13", "15.89", "23.96", "6.89", "yes", "0.01", "YUN3346.3"], ["YUN3428.1", "TACGCCCATCAG", "CCGGACTACHVGGGTWTCTAAT", "3428.0", "1.764", "15.32", "D", "Yungay", "YUN3428", "2.0", "7.2", "623.0", "0.023", "99.99", "100.0", "99.91", "99.42", "13.61", "21.09", "4.13", "yes", "8.8", "YUN3428.1"], ["YUN3428.2", "AAGATCGTACTG", "CCGGACTACHVGGGTWTCTAAT", "3428.0", "1.988", "6.61", "D", "Yungay", "YUN3428", "2.0", "7.2", "621.0", "0.023", "99.99", "100.0", "99.91", "99.42", "13.61", "21.09", "4.13", "yes", "8.8", "YUN3428.2"], ["YUN3428.3", "ACTCATCTTCCA", "CCGGACTACHVGGGTWTCTAAT", "3428.0", "2.782", "15.46", "D", "Yungay", "YUN3428", "2.0", "7.2", "658.0", "0.023", "99.99", "100.0", "99.91", "99.42", "13.61", "21.09", "4.13", "yes", "8.8", "YUN3428.3"], ["YUN3533.1.1", "TTGGACGTCCAC", "CCGGACTACHVGGGTWTCTAAT", "3533.0", "3.352", "14.29", "D", "Yungay", "YUN3533", "1.0", "7.1", "nan", "nan", "100.0", "100.0", "99.93", "99.94", "11.41", "19.21", "3.47", "yes", "8.6", "YUN3533.1.1"], ["YUN3533.1.2", "TCCAGGGCTATA", "CCGGACTACHVGGGTWTCTAAT", "3533.0", "3.21", "14.32", "D", "Yungay", "YUN3533", "2.0", "8.0", "521.0", "0.024", "100.0", "100.0", "99.93", "99.94", "11.41", "19.21", "3.47", "yes", "8.6", "YUN3533.1.2"], ["YUN3533.1.3", "GCGTAGAGAGAC", "CCGGACTACHVGGGTWTCTAAT", "3533.0", "1.987", "7.55", "D", "Yungay", "YUN3533", "3.0", "7.8", "nan", "nan", "100.0", "100.0", "99.93", "99.94", "11.41", "19.21", "3.47", "yes", "8.6", "YUN3533.1.3"], ["YUN3533.2", "GAAACTCCTAGA", "CCGGACTACHVGGGTWTCTAAT", "3533.0", "9.236", "14.33", "D", "Yungay", "YUN3533", "2.0", "8.0", "773.0", "0.024", "100.0", "100.0", "99.93", "99.94", "11.41", "19.21", "3.47", "yes", "8.6", "YUN3533.2"], ["YUN3533.3", "ATCGGGCTTAAC", "CCGGACTACHVGGGTWTCTAAT", "3533.0", "3.642", "17.43", "D", "Yungay", "YUN3533", "2.0", "8.0", "664.0", "0.024", "100.0", "100.0", "99.93", "99.94", "11.41", "19.21", "3.47", "yes", "8.6", "YUN3533.3"], ["YUN3856.1.1", "AATCTTGCGCCG", "CCGGACTACHVGGGTWTCTAAT", "3856.0", "6.444", "12.93", "G", "Yungay", "YUN3856", "1.0", "6.98", "nan", "nan", "99.44", "100.0", "73.75", "93.7", "9.51", "17.45", "0.45", "yes", "3.1", "YUN3856.1.1"], ["YUN3856.1.2", "GGAAATCCCATC", "CCGGACTACHVGGGTWTCTAAT", "3856.0", "6.23", "16.35", "G", "Yungay", "YUN3856", "2.0", "7.43", "713.0", "0.029", "99.44", "100.0", "73.75", "93.7", "9.51", "17.45", "0.45", "yes", "3.1", "YUN3856.1.2"], ["YUN3856.1.3", "GACCGTCAATAC", "CCGGACTACHVGGGTWTCTAAT", "3856.0", "3.134", "18.17", "G", "Yungay", "YUN3856", "3.0", "7.54", "nan", "nan", "99.44", "100.0", "73.75", "93.7", "9.51", "17.45", "0.45", "yes", "3.1", "YUN3856.1.3"], ["YUN3856.2", "TTGGAACGGCTT", "CCGGACTACHVGGGTWTCTAAT", "3856.0", "4.178", "17.12", "H", "Yungay", "YUN3856", "2.0", "7.43", "404.0", "0.029", "99.44", "100.0", "73.75", "93.7", "9.51", "17.45", "0.45", "yes", "3.1", "YUN3856.2"], ["YUN3856.3", "TCCTAGGTCCGA", "CCGGACTACHVGGGTWTCTAAT", "3856.0", "6.695", "15.86", "H", "Yungay", "YUN3856", "2.0", "7.43", "988.0", "0.029", "99.44", "100.0", "73.75", "93.7", "9.51", "17.45", "0.45", "yes", "3.1", "YUN3856.3"]], "metadata_headers": ["SampleID", "BarcodeSequence", "LinkerPrimerSequence", "Elevation", "ExtractConcen", "AmpliconConcentration", "ExtractGroupNo", "TransectName", "SiteName", "Depth", "pH", "TOC", "EC", "AverageSoilRelativeHumidity", "RelativeHumiditySoilHigh", "RelativeHumiditySoilLow", "PercentRelativeHumiditySoil_100", "AverageSoilTemperature", "TemperatureSoilHigh", "TemperatureSoilLow", "Vegetation", "PercentCover", "Description"], "settings": {}, "type": "scatter"}};
+
+  var plot, biplot = null, ec;
+
+  function init() {
+    // Initialize the DecompositionModel for the scatter plot, and optionally
+    // add one for the biplot arrows
+    plot = new DecompositionModel(data.plot.decomposition,
+                                  data.plot.metadata_headers,
+                                  data.plot.metadata,
+                                  data.plot.type);
+
+    if (data.biplot) {
+      biplot = new DecompositionModel(data.biplot.decomposition,
+                                      data.biplot.metadata_headers,
+                                      data.biplot.metadata,
+                                      data.biplot.type);
+    }
+
+    ec = new EmperorController(plot, biplot, "emperor-notebook-0x3e221b68", undefined,
+                               data.info);
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    ec.render();
+  }
+  $(window).resize(function() {
+    ec.resize(div.innerWidth(), div.innerHeight());
+  });
+
+  $(function(){
+    init();
+    animate();
+
+    ec.ready = function () {
+      // any other code that needs to be executed when emperor is loaded should
+      // go here
+      ec.loadConfig(data.plot.settings);
+
+      // sets up generic callbacks for 3rd party consumers
+      var plotView = ec.sceneViews[0];
+      /*__custom_on_ready_code__*/
+      
+    }
+  });
+
+}); // END REQUIRE.JS block
+    </script>
+  </body>
+</html>

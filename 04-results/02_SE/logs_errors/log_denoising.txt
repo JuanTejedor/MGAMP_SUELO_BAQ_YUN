@@ -3,11 +3,11 @@ package 'optparse' was built under R version 4.2.3
 R version 4.2.2 (2022-10-31) 
 Loading required package: Rcpp
 DADA2: 1.26.0 / Rcpp: 1.0.11 / RcppParallel: 5.1.6 
-2) Filtering The filter removed all reads: /tmp/tmph17m965f/BAQ1370.1.2_75_L001_R1_001.fastq.gz not written.
-The filter removed all reads: /tmp/tmph17m965f/BAQ1370.3_73_L001_R1_001.fastq.gz not written.
-The filter removed all reads: /tmp/tmph17m965f/BAQ1552.2_71_L001_R1_001.fastq.gz not written.
-The filter removed all reads: /tmp/tmph17m965f/BAQ895.3_55_L001_R1_001.fastq.gz not written.
-The filter removed all reads: /tmp/tmph17m965f/YUN2029.3_65_L001_R1_001.fastq.gz not written.
+2) Filtering The filter removed all reads: /tmp/tmpc_oe0rdv/BAQ1370.1.2_75_L001_R1_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmpc_oe0rdv/BAQ1370.3_73_L001_R1_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmpc_oe0rdv/BAQ1552.2_71_L001_R1_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmpc_oe0rdv/BAQ895.3_55_L001_R1_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmpc_oe0rdv/YUN2029.3_65_L001_R1_001.fastq.gz not written.
 Some input samples had no reads pass the filter.
 x.x.x..........................x...........x...............................
 3) Learning Error Rates
@@ -20,8 +20,8 @@ x.x.x..........................x...........x...............................
 Running external command line application(s). This may print messages to stdout and/or stderr.
 The command(s) being run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
 
-Command: run_dada.R --input_directory /tmp/qiime2/juantejedor/data/420c8d11-fb46-4301-816d-67b5cd8c0121/data --output_path /tmp/tmph17m965f/output.tsv.biom --output_track /tmp/tmph17m965f/track.tsv --filtered_directory /tmp/tmph17m965f --truncation_length 150 --trim_left 0 --max_expected_errors 2.0 --truncation_quality_score 2 --max_length Inf --pooling_method independent --chimera_method consensus --min_parental_fold 1.0 --allow_one_off False --num_threads 2 --learn_min_reads 1000000 --homopolymer_gap_penalty NULL --band_size 16
+Command: run_dada.R --input_directory /tmp/qiime2/juantejedor/data/420c8d11-fb46-4301-816d-67b5cd8c0121/data --output_path /tmp/tmpc_oe0rdv/output.tsv.biom --output_track /tmp/tmpc_oe0rdv/track.tsv --filtered_directory /tmp/tmpc_oe0rdv --truncation_length 150 --trim_left 0 --max_expected_errors 2.0 --truncation_quality_score 2 --max_length Inf --pooling_method independent --chimera_method consensus --min_parental_fold 1.0 --allow_one_off False --num_threads 2 --learn_min_reads 1000000 --homopolymer_gap_penalty NULL --band_size 16
 
-Saved FeatureTable[Frequency] to: 04-results/02_SE/table_ASVs.qza
-Saved FeatureData[Sequence] to: 04-results/02_SE/sequences_ASVs.qza
-Saved SampleData[DADA2Stats] to: 04-results/02_SE/denoising_stats.qza
+Saved FeatureTable[Frequency] to: 04-results/02_SE/denoising/table_ASVs.qza
+Saved FeatureData[Sequence] to: 04-results/02_SE/denoising/sequences_ASVs.qza
+Saved SampleData[DADA2Stats] to: 04-results/02_SE/denoising/denoising_stats.qza
