@@ -1,0 +1,64 @@
+Warning message:
+package 'optparse' was built under R version 4.2.3 
+R version 4.2.2 (2022-10-31) 
+Loading required package: Rcpp
+DADA2: 1.26.0 / Rcpp: 1.0.11 / RcppParallel: 5.1.6 
+2) Filtering The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/BAQ1370.1.2_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/BAQ1370.1.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/BAQ1370.3_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/BAQ1370.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/BAQ1552.2_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/BAQ1552.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/BAQ895.3_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/BAQ895.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/YUN1609.3_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/YUN1609.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/YUN2029.3_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/YUN2029.3_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/YUN3008.1.2_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/YUN3008.1.2_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/YUN3184.1_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/YUN3184.1_L001_R2_001.fastq.gz not written.
+The filter removed all reads: /tmp/tmp2dou3_8q/filt_f/YUN3184.2_L001_R1_001.fastq.gz and /tmp/tmp2dou3_8q/filt_r/YUN3184.2_L001_R2_001.fastq.gz not written.
+Some input samples had no reads pass the filter.
+x.x.x..........................x........x..x.x......xx.....................
+3) Learning Error Rates
+6587700 total bases in 43918 reads from 66 samples will be used for learning the error rates.
+4830980 total bases in 43918 reads from 66 samples will be used for learning the error rates.
+3) Denoise samples ..................................................................
+..................................................................
+5) Remove chimeras (method = consensus)
+Error in isBimeraDenovoTable(unqs[[i]], ..., verbose = verbose) : 
+  Input must be a valid sequence table.
+Calls: removeBimeraDenovo -> isBimeraDenovoTable
+3: stop("Input must be a valid sequence table.")
+2: isBimeraDenovoTable(unqs[[i]], ..., verbose = verbose)
+1: removeBimeraDenovo(seqtab, method = chimeraMethod, minFoldParentOverAbundance = minParentFold, 
+       allowOneOff = allowOneOff, multithread = multithread)
+Traceback (most recent call last):
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/q2_dada2/_denoise.py", line 326, in denoise_paired
+    run_commands([cmd])
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/q2_dada2/_denoise.py", line 36, in run_commands
+    subprocess.run(cmd, check=True)
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['run_dada.R', '--input_directory', '/tmp/tmp2dou3_8q/forward', '--input_directory_reverse', '/tmp/tmp2dou3_8q/reverse', '--output_path', '/tmp/tmp2dou3_8q/output.tsv.biom', '--output_track', '/tmp/tmp2dou3_8q/track.tsv', '--filtered_directory', '/tmp/tmp2dou3_8q/filt_f', '--filtered_directory_reverse', '/tmp/tmp2dou3_8q/filt_r', '--truncation_length', '150', '--truncation_length_reverse', '110', '--trim_left', '0', '--trim_left_reverse', '0', '--max_expected_errors', '2.0', '--max_expected_errors_reverse', '2.0', '--truncation_quality_score', '2', '--min_overlap', '12', '--pooling_method', 'independent', '--chimera_method', 'consensus', '--min_parental_fold', '1.0', '--allow_one_off', 'False', '--num_threads', '2', '--learn_min_reads', '1000000']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/q2cli/commands.py", line 520, in __call__
+    results = self._execute_action(
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/q2cli/commands.py", line 581, in _execute_action
+    results = action(**arguments)
+  File "<decorator-gen-73>", line 2, in denoise_paired
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/qiime2/sdk/action.py", line 342, in bound_callable
+    outputs = self._callable_executor_(
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/qiime2/sdk/action.py", line 566, in _callable_executor_
+    output_views = self._callable(**view_args)
+  File "/home/juantejedor/miniconda3/envs/qiime2-amplicon-2023.9/lib/python3.8/site-packages/q2_dada2/_denoise.py", line 339, in denoise_paired
+    raise Exception("An error was encountered while running DADA2"
+Exception: An error was encountered while running DADA2 in R (return code 1), please inspect stdout and stderr to learn more.
+
+Plugin error from dada2:
+
+  An error was encountered while running DADA2 in R (return code 1), please inspect stdout and stderr to learn more.
+
+See above for debug info.
+Running external command line application(s). This may print messages to stdout and/or stderr.
+The command(s) being run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
+
+Command: run_dada.R --input_directory /tmp/tmp2dou3_8q/forward --input_directory_reverse /tmp/tmp2dou3_8q/reverse --output_path /tmp/tmp2dou3_8q/output.tsv.biom --output_track /tmp/tmp2dou3_8q/track.tsv --filtered_directory /tmp/tmp2dou3_8q/filt_f --filtered_directory_reverse /tmp/tmp2dou3_8q/filt_r --truncation_length 150 --truncation_length_reverse 110 --trim_left 0 --trim_left_reverse 0 --max_expected_errors 2.0 --max_expected_errors_reverse 2.0 --truncation_quality_score 2 --min_overlap 12 --pooling_method independent --chimera_method consensus --min_parental_fold 1.0 --allow_one_off False --num_threads 2 --learn_min_reads 1000000
+

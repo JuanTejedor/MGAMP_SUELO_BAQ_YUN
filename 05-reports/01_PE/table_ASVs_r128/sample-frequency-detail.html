@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>q2_feature_table : summarize</title>
+    <link rel="stylesheet" href="./q2templateassets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./q2templateassets/css/normalize.css"/>
+    <link rel="stylesheet" href="./q2templateassets/css/base-template.css"/>
+    <script src="./q2templateassets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="./q2templateassets/js/bootstrap.min.js" charset="utf-8"></script>
+    
+<script src="js/vega.min.js"></script>
+<script src="js/vega-embed.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/spinkit.css" /> 
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="q2templatesheader" class="row">
+        <div class="col-lg-12">
+          <a href="http://qiime2.org/">
+            <img src="./q2templateassets/img/qiime2-rect-200.png"
+            alt="QIIME 2">
+          </a>
+        </div>
+      </div>
+        
+
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="nav nav-tabs">
+        
+          <li class="">
+            <a href="index.html">
+              Overview
+            </a>
+          </li>
+        
+          <li class="active">
+            <a href="sample-frequency-detail.html">
+              Interactive Sample Detail
+            </a>
+          </li>
+        
+          <li class="">
+            <a href="feature-frequency-detail.html">
+              Feature Detail
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      
+
+
+<div class="row">
+
+  <div class="col-lg-8">
+    <div id="plot">
+      <div id="loading" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Plot Controls</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12" id="toolbar"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12" id="metadata-category"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12" id="sampling-depth-slider"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12" id="text-field"></div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+  function handleErrors(errors, element, msg) {
+    console.error(errors);
+    msg = msg === undefined ? '' : msg + '<br><br>';
+    var helpMsg = '<p class="alert alert-danger"> \
+                   There was an error loading and rendering the \
+                   visualization.<br><br>' + msg + 'Please \
+                   copy-and-paste the following error messages when \
+                   reporting this error (please be aware that the content \
+                   of your analysis data and/or metadata is included in \
+                   these messages):</p>';
+    var helpMsgDiv = $('<div></div>');
+    helpMsgDiv.append(helpMsg);
+    helpMsgDiv.append('<pre><code>' + errors.join('\n\n') + '</code></pre>');
+    element.replaceWith(helpMsgDiv);
+  }
+  window.onerror = function(error) {
+    handleErrors([error], $('#loading'));
+  };
+</script>
+<script id="spec" type="application/json">
+{"$schema": "https://vega.github.io/schema/vega/v5.json", "autosize": {"contains": "content", "type": "fit-x", "resize": true}, "width": 800, "data": [{"transform": [{"as": "selectedCategory", "expr": "datum.metadata[category]", "type": "formula"}], "name": "table", "values": [{"id": "BAQ1370.1.3", "metadata": {"BarcodeSequence": "ATAAAGAGGAGG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1370.0, "ExtractConcen": 1.2, "AmpliconConcentration": 0.96, "ExtractGroupNo": "J", "TransectName": "Baquedano", "SiteName": "BAQ1370", "Depth": 3.0, "pH": 8.13, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 16.17, "RelativeHumiditySoilHigh": 23.97, "RelativeHumiditySoilLow": 11.42, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.61, "TemperatureSoilHigh": 35.21, "TemperatureSoilLow": 12.46, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ1370.1.3"}, "frequency": 0.0}, {"id": "BAQ1552.1.1", "metadata": {"BarcodeSequence": "ATCCCAGCATGC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1552.0, "ExtractConcen": 0.722, "AmpliconConcentration": 18.83, "ExtractGroupNo": "J", "TransectName": "Baquedano", "SiteName": "BAQ1552", "Depth": 1.0, "pH": 7.87, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 15.75, "RelativeHumiditySoilHigh": 35.36, "RelativeHumiditySoilLow": 11.1, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.63, "TemperatureSoilHigh": 30.65, "TemperatureSoilLow": 10.96, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ1552.1.1"}, "frequency": 1.0}, {"id": "BAQ2420.1.1", "metadata": {"BarcodeSequence": "ACACAGTCCTGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2420.0, "ExtractConcen": 0.35, "AmpliconConcentration": 7.4, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2420", "Depth": 1.0, "pH": 9.33, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 82.54, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 41.135, "PercentRelativeHumiditySoil_100": 46.77, "AverageSoilTemperature": 22.45, "TemperatureSoilHigh": 28.297, "TemperatureSoilLow": 13.294, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2420.1.1"}, "frequency": 301.0}, {"id": "BAQ2420.1.2", "metadata": {"BarcodeSequence": "ATTATACGGCGC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2420.0, "ExtractConcen": 0.108, "AmpliconConcentration": 11.42, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2420", "Depth": 2.0, "pH": 9.36, "TOC": 166.0, "EC": 0.075, "AverageSoilRelativeHumidity": 82.54, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 41.135, "PercentRelativeHumiditySoil_100": 46.77, "AverageSoilTemperature": 22.45, "TemperatureSoilHigh": 28.297, "TemperatureSoilLow": 13.294, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2420.1.2"}, "frequency": 267.0}, {"id": "BAQ2420.2", "metadata": {"BarcodeSequence": "TAAACGCGACTC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2420.0, "ExtractConcen": 0.089, "AmpliconConcentration": 10.06, "ExtractGroupNo": "A", "TransectName": "Baquedano", "SiteName": "BAQ2420", "Depth": 2.0, "pH": 9.36, "TOC": 337.0, "EC": 0.075, "AverageSoilRelativeHumidity": 82.54, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 41.135, "PercentRelativeHumiditySoil_100": 46.77, "AverageSoilTemperature": 22.45, "TemperatureSoilHigh": 28.297, "TemperatureSoilLow": 13.294, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2420.2"}, "frequency": 324.0}, {"id": "BAQ2420.3", "metadata": {"BarcodeSequence": "CCTCGGGTACTA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2420.0, "ExtractConcen": 0.083, "AmpliconConcentration": 15.92, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ2420", "Depth": 2.0, "pH": 9.36, "TOC": 574.0, "EC": 0.075, "AverageSoilRelativeHumidity": 82.54, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 41.135, "PercentRelativeHumiditySoil_100": 46.77, "AverageSoilTemperature": 22.45, "TemperatureSoilHigh": 28.297, "TemperatureSoilLow": 13.294, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2420.3"}, "frequency": 263.0}, {"id": "BAQ2420.1.3", "metadata": {"BarcodeSequence": "ATTCAGATGGCA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2420.0, "ExtractConcen": 0.132, "AmpliconConcentration": 10.0, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2420", "Depth": 3.0, "pH": 8.9, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 82.54, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 41.135, "PercentRelativeHumiditySoil_100": 46.77, "AverageSoilTemperature": 22.45, "TemperatureSoilHigh": 28.297, "TemperatureSoilLow": 13.294, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2420.1.3"}, "frequency": 282.0}, {"id": "BAQ2462.1", "metadata": {"BarcodeSequence": "TTCACCTGTATC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2462.0, "ExtractConcen": 1.166, "AmpliconConcentration": 15.29, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2462", "Depth": 2.0, "pH": 8.35, "TOC": 173.0, "EC": 0.506, "AverageSoilRelativeHumidity": 69.08, "RelativeHumiditySoilHigh": 98.396, "RelativeHumiditySoilLow": 32.558, "PercentRelativeHumiditySoil_100": 0.21, "AverageSoilTemperature": 21.83, "TemperatureSoilHigh": 29.024, "TemperatureSoilLow": 12.971, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2462.1"}, "frequency": 399.0}, {"id": "BAQ2462.2", "metadata": {"BarcodeSequence": "CTCCAGGTCATG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2462.0, "ExtractConcen": 0.049, "AmpliconConcentration": 10.39, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2462", "Depth": 2.0, "pH": 8.35, "TOC": 331.0, "EC": 0.506, "AverageSoilRelativeHumidity": 69.08, "RelativeHumiditySoilHigh": 98.396, "RelativeHumiditySoilLow": 32.558, "PercentRelativeHumiditySoil_100": 0.21, "AverageSoilTemperature": 21.83, "TemperatureSoilHigh": 29.024, "TemperatureSoilLow": 12.971, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2462.2"}, "frequency": 311.0}, {"id": "BAQ2462.3", "metadata": {"BarcodeSequence": "CAGGATTCGTAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2462.0, "ExtractConcen": 0.066, "AmpliconConcentration": 8.46, "ExtractGroupNo": "A", "TransectName": "Baquedano", "SiteName": "BAQ2462", "Depth": 2.0, "pH": 8.35, "TOC": 634.0, "EC": 0.506, "AverageSoilRelativeHumidity": 69.08, "RelativeHumiditySoilHigh": 98.396, "RelativeHumiditySoilLow": 32.558, "PercentRelativeHumiditySoil_100": 0.21, "AverageSoilTemperature": 21.83, "TemperatureSoilHigh": 29.024, "TemperatureSoilLow": 12.971, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2462.3"}, "frequency": 266.0}, {"id": "BAQ2687.1", "metadata": {"BarcodeSequence": "GTGGCCTACTAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2687.0, "ExtractConcen": 1.223, "AmpliconConcentration": 1.24, "ExtractGroupNo": "A", "TransectName": "Baquedano", "SiteName": "BAQ2687", "Depth": 2.0, "pH": 8.35, "TOC": 554.0, "EC": 0.131, "AverageSoilRelativeHumidity": 73.21, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.87, "PercentRelativeHumiditySoil_100": 43.48, "AverageSoilTemperature": 18.2, "TemperatureSoilHigh": 25.0, "TemperatureSoilLow": 10.67, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ2687.1"}, "frequency": 302.0}, {"id": "BAQ2687.2", "metadata": {"BarcodeSequence": "TTCCCTTCTCCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2687.0, "ExtractConcen": 0.251, "AmpliconConcentration": 17.53, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ2687", "Depth": 2.0, "pH": 8.35, "TOC": 350.0, "EC": 0.131, "AverageSoilRelativeHumidity": 73.21, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.87, "PercentRelativeHumiditySoil_100": 43.48, "AverageSoilTemperature": 18.2, "TemperatureSoilHigh": 25.0, "TemperatureSoilLow": 10.67, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ2687.2"}, "frequency": 354.0}, {"id": "BAQ2687.3", "metadata": {"BarcodeSequence": "CATTTGACGACG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2687.0, "ExtractConcen": 1.176, "AmpliconConcentration": 12.1, "ExtractGroupNo": "E", "TransectName": "Baquedano", "SiteName": "BAQ2687", "Depth": 2.0, "pH": 8.35, "TOC": 400.0, "EC": 0.131, "AverageSoilRelativeHumidity": 73.21, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.87, "PercentRelativeHumiditySoil_100": 43.48, "AverageSoilTemperature": 18.2, "TemperatureSoilHigh": 25.0, "TemperatureSoilLow": 10.67, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ2687.3"}, "frequency": 332.0}, {"id": "BAQ2838.1", "metadata": {"BarcodeSequence": "CGCATACGACCT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2838.0, "ExtractConcen": 0.467, "AmpliconConcentration": 10.91, "ExtractGroupNo": "G", "TransectName": "Baquedano", "SiteName": "BAQ2838", "Depth": 2.0, "pH": 8.36, "TOC": 353.0, "EC": 0.212, "AverageSoilRelativeHumidity": 44.74, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 16.647, "PercentRelativeHumiditySoil_100": 11.34, "AverageSoilTemperature": 19.08, "TemperatureSoilHigh": 24.995, "TemperatureSoilLow": 10.709, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2838.1"}, "frequency": 185.0}, {"id": "BAQ2838.2", "metadata": {"BarcodeSequence": "GCCTCGTACTGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2838.0, "ExtractConcen": 0.309, "AmpliconConcentration": 14.38, "ExtractGroupNo": "H", "TransectName": "Baquedano", "SiteName": "BAQ2838", "Depth": 2.0, "pH": 8.36, "TOC": 260.0, "EC": 0.212, "AverageSoilRelativeHumidity": 44.74, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 16.647, "PercentRelativeHumiditySoil_100": 11.34, "AverageSoilTemperature": 19.08, "TemperatureSoilHigh": 24.995, "TemperatureSoilLow": 10.709, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2838.2"}, "frequency": 174.0}, {"id": "BAQ2838.3", "metadata": {"BarcodeSequence": "ACCAACAGATTG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2838.0, "ExtractConcen": 0.145, "AmpliconConcentration": 14.06, "ExtractGroupNo": "A", "TransectName": "Baquedano", "SiteName": "BAQ2838", "Depth": 2.0, "pH": 8.36, "TOC": 369.0, "EC": 0.212, "AverageSoilRelativeHumidity": 44.74, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 16.647, "PercentRelativeHumiditySoil_100": 11.34, "AverageSoilTemperature": 19.08, "TemperatureSoilHigh": 24.995, "TemperatureSoilLow": 10.709, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ2838.3"}, "frequency": 95.0}, {"id": "BAQ3473.1", "metadata": {"BarcodeSequence": "AAGTGAAGCGAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3473.0, "ExtractConcen": 16.374, "AmpliconConcentration": 1.29, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ3473", "Depth": 2.0, "pH": 7.93, "TOC": 3675.0, "EC": 0.42, "AverageSoilRelativeHumidity": 82.05, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 42.09, "PercentRelativeHumiditySoil_100": 35.37, "AverageSoilTemperature": 13.46, "TemperatureSoilHigh": 20.69, "TemperatureSoilLow": 5.12, "Vegetation": "yes", "PercentCover": 1.2, "Description": "BAQ3473.1"}, "frequency": 418.0}, {"id": "BAQ3473.2", "metadata": {"BarcodeSequence": "TGCCGCCGTAAT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3473.0, "ExtractConcen": 5.17, "AmpliconConcentration": 11.05, "ExtractGroupNo": "B", "TransectName": "Baquedano", "SiteName": "BAQ3473", "Depth": 2.0, "pH": 7.93, "TOC": 838.0, "EC": 0.42, "AverageSoilRelativeHumidity": 82.05, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 42.09, "PercentRelativeHumiditySoil_100": 35.37, "AverageSoilTemperature": 13.46, "TemperatureSoilHigh": 20.69, "TemperatureSoilLow": 5.12, "Vegetation": "yes", "PercentCover": 1.2, "Description": "BAQ3473.2"}, "frequency": 280.0}, {"id": "BAQ3473.3", "metadata": {"BarcodeSequence": "AACCTCGGATAA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3473.0, "ExtractConcen": 0.91, "AmpliconConcentration": 4.41, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ3473", "Depth": 2.0, "pH": 7.93, "TOC": 16449.0, "EC": 0.42, "AverageSoilRelativeHumidity": 82.05, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 42.09, "PercentRelativeHumiditySoil_100": 35.37, "AverageSoilTemperature": 13.46, "TemperatureSoilHigh": 20.69, "TemperatureSoilLow": 5.12, "Vegetation": "yes", "PercentCover": 1.2, "Description": "BAQ3473.3"}, "frequency": 581.0}, {"id": "BAQ4166.1.1", "metadata": {"BarcodeSequence": "GTGCTTGTGTAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4166.0, "ExtractConcen": 33.492, "AmpliconConcentration": 3.16, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4166", "Depth": 1.0, "pH": 5.64, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 100.0, "PercentRelativeHumiditySoil_100": 100.0, "AverageSoilTemperature": 9.41, "TemperatureSoilHigh": 17.54, "TemperatureSoilLow": 1.42, "Vegetation": "yes", "PercentCover": 7.1, "Description": "BAQ4166.1.1"}, "frequency": 311.0}, {"id": "BAQ4166.1.2", "metadata": {"BarcodeSequence": "CAACTAGACTCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4166.0, "ExtractConcen": 16.086, "AmpliconConcentration": 18.25, "ExtractGroupNo": "B", "TransectName": "Baquedano", "SiteName": "BAQ4166", "Depth": 2.0, "pH": 7.22, "TOC": 2085.0, "EC": 0.084, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 100.0, "PercentRelativeHumiditySoil_100": 100.0, "AverageSoilTemperature": 9.41, "TemperatureSoilHigh": 17.54, "TemperatureSoilLow": 1.42, "Vegetation": "yes", "PercentCover": 7.1, "Description": "BAQ4166.1.2"}, "frequency": 641.0}, {"id": "BAQ4166.2", "metadata": {"BarcodeSequence": "GGAACGACGTGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4166.0, "ExtractConcen": 2.958, "AmpliconConcentration": 0.12, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4166", "Depth": 2.0, "pH": 7.22, "TOC": 3692.0, "EC": 0.084, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 100.0, "PercentRelativeHumiditySoil_100": 100.0, "AverageSoilTemperature": 9.41, "TemperatureSoilHigh": 17.54, "TemperatureSoilLow": 1.42, "Vegetation": "yes", "PercentCover": 7.1, "Description": "BAQ4166.2"}, "frequency": 438.0}, {"id": "BAQ4166.3", "metadata": {"BarcodeSequence": "TGTCAGCTGTCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4166.0, "ExtractConcen": 28.92, "AmpliconConcentration": 0.26, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4166", "Depth": 2.0, "pH": 7.22, "TOC": 2271.0, "EC": 0.084, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 100.0, "PercentRelativeHumiditySoil_100": 100.0, "AverageSoilTemperature": 9.41, "TemperatureSoilHigh": 17.54, "TemperatureSoilLow": 1.42, "Vegetation": "yes", "PercentCover": 7.1, "Description": "BAQ4166.3"}, "frequency": 465.0}, {"id": "BAQ4166.1.3", "metadata": {"BarcodeSequence": "AGTGCCCTTGGT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4166.0, "ExtractConcen": 14.532, "AmpliconConcentration": 0.55, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4166", "Depth": 3.0, "pH": 7.41, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 100.0, "PercentRelativeHumiditySoil_100": 100.0, "AverageSoilTemperature": 9.41, "TemperatureSoilHigh": 17.54, "TemperatureSoilLow": 1.42, "Vegetation": "yes", "PercentCover": 7.1, "Description": "BAQ4166.1.3"}, "frequency": 413.0}, {"id": "BAQ4697.1", "metadata": {"BarcodeSequence": "CTGGTGCTGAAT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4697.0, "ExtractConcen": 10.044, "AmpliconConcentration": 1.88, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4697", "Depth": 2.0, "pH": 7.44, "TOC": 424.0, "EC": 0.055, "AverageSoilRelativeHumidity": null, "RelativeHumiditySoilHigh": null, "RelativeHumiditySoilLow": null, "PercentRelativeHumiditySoil_100": null, "AverageSoilTemperature": null, "TemperatureSoilHigh": null, "TemperatureSoilLow": null, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ4697.1"}, "frequency": 503.0}, {"id": "BAQ4697.2", "metadata": {"BarcodeSequence": "GACAGAGGTGCA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4697.0, "ExtractConcen": 5.864, "AmpliconConcentration": 1.22, "ExtractGroupNo": "B", "TransectName": "Baquedano", "SiteName": "BAQ4697", "Depth": 2.0, "pH": 7.44, "TOC": 531.0, "EC": 0.055, "AverageSoilRelativeHumidity": null, "RelativeHumiditySoilHigh": null, "RelativeHumiditySoilLow": null, "PercentRelativeHumiditySoil_100": null, "AverageSoilTemperature": null, "TemperatureSoilHigh": null, "TemperatureSoilLow": null, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ4697.2"}, "frequency": 495.0}, {"id": "BAQ4697.3", "metadata": {"BarcodeSequence": "TCAGACCAACTG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 4697.0, "ExtractConcen": 8.264, "AmpliconConcentration": 1.39, "ExtractGroupNo": "C", "TransectName": "Baquedano", "SiteName": "BAQ4697", "Depth": 2.0, "pH": 7.44, "TOC": 631.0, "EC": 0.055, "AverageSoilRelativeHumidity": null, "RelativeHumiditySoilHigh": null, "RelativeHumiditySoilLow": null, "PercentRelativeHumiditySoil_100": null, "AverageSoilTemperature": null, "TemperatureSoilHigh": null, "TemperatureSoilLow": null, "Vegetation": "yes", "PercentCover": 0.1, "Description": "BAQ4697.3"}, "frequency": 621.0}, {"id": "BAQ895.2", "metadata": {"BarcodeSequence": "TCCTCACTATCA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 895.0, "ExtractConcen": 0.017, "AmpliconConcentration": 1.01, "ExtractGroupNo": "B", "TransectName": "Baquedano", "SiteName": "BAQ895", "Depth": 2.0, "pH": null, "TOC": 61.0, "EC": 2.945, "AverageSoilRelativeHumidity": 32.22, "RelativeHumiditySoilHigh": 43.14, "RelativeHumiditySoilLow": 25.6, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 19.17, "TemperatureSoilHigh": 31.82, "TemperatureSoilLow": 10.54, "Vegetation": "no", "PercentCover": 0.0, "Description": "BAQ895.2"}, "frequency": 0.0}, {"id": "YUN1005.1.1", "metadata": {"BarcodeSequence": "ACGTAACCACGT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1005.0, "ExtractConcen": 0.103, "AmpliconConcentration": 13.17, "ExtractGroupNo": "I", "TransectName": "Yungay", "SiteName": "YUN1005", "Depth": 1.0, "pH": 7.54, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 20.7, "RelativeHumiditySoilHigh": 31.011, "RelativeHumiditySoilLow": 16.343, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.59, "TemperatureSoilHigh": 26.26, "TemperatureSoilLow": 16.51, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1005.1.1"}, "frequency": 610.0}, {"id": "YUN1005.2", "metadata": {"BarcodeSequence": "TCTAACGAGTGC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1005.0, "ExtractConcen": 0.03, "AmpliconConcentration": 0.94, "ExtractGroupNo": "I", "TransectName": "Yungay", "SiteName": "YUN1005", "Depth": 2.0, "pH": null, "TOC": 160.0, "EC": 2.27, "AverageSoilRelativeHumidity": 20.7, "RelativeHumiditySoilHigh": 31.011, "RelativeHumiditySoilLow": 16.343, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.59, "TemperatureSoilHigh": 26.26, "TemperatureSoilLow": 16.51, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1005.2"}, "frequency": 0.0}, {"id": "YUN1005.3", "metadata": {"BarcodeSequence": "CATCTGGGCAAT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1005.0, "ExtractConcen": 0.028, "AmpliconConcentration": 4.32, "ExtractGroupNo": "I", "TransectName": "Yungay", "SiteName": "YUN1005", "Depth": 2.0, "pH": 7.6, "TOC": 223.0, "EC": 2.27, "AverageSoilRelativeHumidity": 20.7, "RelativeHumiditySoilHigh": 31.011, "RelativeHumiditySoilLow": 16.343, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.59, "TemperatureSoilHigh": 26.26, "TemperatureSoilLow": 16.51, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1005.3"}, "frequency": 314.0}, {"id": "YUN1005.1.3", "metadata": {"BarcodeSequence": "GTCGGAAATTGT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1005.0, "ExtractConcen": 0.034, "AmpliconConcentration": 1.12, "ExtractGroupNo": "I", "TransectName": "Yungay", "SiteName": "YUN1005", "Depth": 3.0, "pH": 7.6, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 20.7, "RelativeHumiditySoilHigh": 31.011, "RelativeHumiditySoilLow": 16.343, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 22.59, "TemperatureSoilHigh": 26.26, "TemperatureSoilLow": 16.51, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1005.1.3"}, "frequency": 0.0}, {"id": "YUN1242.1", "metadata": {"BarcodeSequence": "TGTCCGTGGATC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1242.0, "ExtractConcen": 0.228, "AmpliconConcentration": 19.2, "ExtractGroupNo": "K", "TransectName": "Yungay", "SiteName": "YUN1242", "Depth": 2.0, "pH": 9.0, "TOC": 226.0, "EC": 1.845, "AverageSoilRelativeHumidity": 20.9, "RelativeHumiditySoilHigh": 36.46, "RelativeHumiditySoilLow": 16.96, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 23.61, "TemperatureSoilHigh": 27.62, "TemperatureSoilLow": 18.33, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1242.1"}, "frequency": 488.0}, {"id": "YUN1242.2", "metadata": {"BarcodeSequence": "ACTCGGCCAACT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1242.0, "ExtractConcen": 0.023, "AmpliconConcentration": 0.54, "ExtractGroupNo": "B", "TransectName": "Yungay", "SiteName": "YUN1242", "Depth": 2.0, "pH": 9.0, "TOC": 194.0, "EC": 1.845, "AverageSoilRelativeHumidity": 20.9, "RelativeHumiditySoilHigh": 36.46, "RelativeHumiditySoilLow": 16.96, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 23.61, "TemperatureSoilHigh": 27.62, "TemperatureSoilLow": 18.33, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1242.2"}, "frequency": 1.0}, {"id": "YUN1242.3", "metadata": {"BarcodeSequence": "GTTGGTTGGCAT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1242.0, "ExtractConcen": 0.05, "AmpliconConcentration": 15.61, "ExtractGroupNo": "K", "TransectName": "Yungay", "SiteName": "YUN1242", "Depth": 2.0, "pH": 9.0, "TOC": 452.0, "EC": 1.845, "AverageSoilRelativeHumidity": 20.9, "RelativeHumiditySoilHigh": 36.46, "RelativeHumiditySoilLow": 16.96, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 23.61, "TemperatureSoilHigh": 27.62, "TemperatureSoilLow": 18.33, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1242.3"}, "frequency": 530.0}, {"id": "YUN1609.1", "metadata": {"BarcodeSequence": "TTCCACACGTGG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 1609.0, "ExtractConcen": 0.031, "AmpliconConcentration": 6.42, "ExtractGroupNo": "B", "TransectName": "Yungay", "SiteName": "YUN1609", "Depth": 2.0, "pH": 8.0, "TOC": 361.0, "EC": 0.427, "AverageSoilRelativeHumidity": 17.18, "RelativeHumiditySoilHigh": 50.4, "RelativeHumiditySoilLow": 12.53, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 21.47, "TemperatureSoilHigh": 25.39, "TemperatureSoilLow": 16.1, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN1609.1"}, "frequency": 498.0}, {"id": "YUN2029.1", "metadata": {"BarcodeSequence": "GTAGTGTCAACA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2029.0, "ExtractConcen": 0.022, "AmpliconConcentration": 9.59, "ExtractGroupNo": "K", "TransectName": "Yungay", "SiteName": "YUN2029", "Depth": 2.0, "pH": 7.89, "TOC": 184.0, "EC": 0.067, "AverageSoilRelativeHumidity": 28.79, "RelativeHumiditySoilHigh": 52.55, "RelativeHumiditySoilLow": 21.76, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 17.85, "TemperatureSoilHigh": 24.16, "TemperatureSoilLow": 10.21, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN2029.1"}, "frequency": 0.0}, {"id": "YUN2029.2", "metadata": {"BarcodeSequence": "TGGAGAGGAGAT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 2029.0, "ExtractConcen": 0.232, "AmpliconConcentration": 16.71, "ExtractGroupNo": "B", "TransectName": "Yungay", "SiteName": "YUN2029", "Depth": 2.0, "pH": 7.89, "TOC": 241.0, "EC": 0.067, "AverageSoilRelativeHumidity": 28.79, "RelativeHumiditySoilHigh": 52.55, "RelativeHumiditySoilLow": 21.76, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 17.85, "TemperatureSoilHigh": 24.16, "TemperatureSoilLow": 10.21, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN2029.2"}, "frequency": 677.0}, {"id": "YUN3008.1.1", "metadata": {"BarcodeSequence": "ATCGATCCACAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3008.0, "ExtractConcen": 0.021, "AmpliconConcentration": 1.29, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3008", "Depth": 1.0, "pH": 7.7, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 70.89, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.37, "PercentRelativeHumiditySoil_100": 29.1, "AverageSoilTemperature": 11.57, "TemperatureSoilHigh": 30.98, "TemperatureSoilLow": -2.57, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3008.1.1"}, "frequency": 0.0}, {"id": "YUN3008.2", "metadata": {"BarcodeSequence": "GTAGCACTCATG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3008.0, "ExtractConcen": 0.036, "AmpliconConcentration": 1.1, "ExtractGroupNo": "K", "TransectName": "Yungay", "SiteName": "YUN3008", "Depth": 2.0, "pH": null, "TOC": 367.0, "EC": 2.205, "AverageSoilRelativeHumidity": 70.89, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.37, "PercentRelativeHumiditySoil_100": 29.1, "AverageSoilTemperature": 11.57, "TemperatureSoilHigh": 30.98, "TemperatureSoilLow": -2.57, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3008.2"}, "frequency": 0.0}, {"id": "YUN3008.3", "metadata": {"BarcodeSequence": "CACCTGTAGTAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3008.0, "ExtractConcen": 0.021, "AmpliconConcentration": 1.0, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3008", "Depth": 2.0, "pH": null, "TOC": 417.0, "EC": 2.205, "AverageSoilRelativeHumidity": 70.89, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.37, "PercentRelativeHumiditySoil_100": 29.1, "AverageSoilTemperature": 11.57, "TemperatureSoilHigh": 30.98, "TemperatureSoilLow": -2.57, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3008.3"}, "frequency": 0.0}, {"id": "YUN3008.1.3", "metadata": {"BarcodeSequence": "GTCTCCTCCCTT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3008.0, "ExtractConcen": 0.017, "AmpliconConcentration": 0.99, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3008", "Depth": 3.0, "pH": 7.5, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 70.89, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 20.37, "PercentRelativeHumiditySoil_100": 29.1, "AverageSoilTemperature": 11.57, "TemperatureSoilHigh": 30.98, "TemperatureSoilLow": -2.57, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3008.1.3"}, "frequency": 0.0}, {"id": "YUN3153.1", "metadata": {"BarcodeSequence": "AATACAGACCTG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3153.0, "ExtractConcen": 0.011, "AmpliconConcentration": 1.05, "ExtractGroupNo": "E", "TransectName": "Yungay", "SiteName": "YUN3153", "Depth": 2.0, "pH": 7.6, "TOC": 580.0, "EC": 2.26, "AverageSoilRelativeHumidity": 59.69, "RelativeHumiditySoilHigh": 93.15, "RelativeHumiditySoilLow": 32.12, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 12.5, "TemperatureSoilHigh": 19.62, "TemperatureSoilLow": 3.48, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3153.1"}, "frequency": 0.0}, {"id": "YUN3153.2", "metadata": {"BarcodeSequence": "GACTCAACCAGT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3153.0, "ExtractConcen": 0.493, "AmpliconConcentration": 16.89, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3153", "Depth": 2.0, "pH": 7.6, "TOC": 185.0, "EC": 2.26, "AverageSoilRelativeHumidity": 59.69, "RelativeHumiditySoilHigh": 93.15, "RelativeHumiditySoilLow": 32.12, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 12.5, "TemperatureSoilHigh": 19.62, "TemperatureSoilLow": 3.48, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3153.2"}, "frequency": 275.0}, {"id": "YUN3153.3", "metadata": {"BarcodeSequence": "GGAAGAAGTAGC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3153.0, "ExtractConcen": 0.22, "AmpliconConcentration": 18.41, "ExtractGroupNo": "B", "TransectName": "Yungay", "SiteName": "YUN3153", "Depth": 2.0, "pH": 7.6, "TOC": 391.0, "EC": 2.26, "AverageSoilRelativeHumidity": 59.69, "RelativeHumiditySoilHigh": 93.15, "RelativeHumiditySoilLow": 32.12, "PercentRelativeHumiditySoil_100": 0.0, "AverageSoilTemperature": 12.5, "TemperatureSoilHigh": 19.62, "TemperatureSoilLow": 3.48, "Vegetation": "no", "PercentCover": 0.0, "Description": "YUN3153.3"}, "frequency": 362.0}, {"id": "YUN3259.1.1", "metadata": {"BarcodeSequence": "TAGACACCGTGT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3259.0, "ExtractConcen": 3.71, "AmpliconConcentration": 7.07, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3259", "Depth": 1.0, "pH": 8.48, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 93.57, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 69.04, "PercentRelativeHumiditySoil_100": 64.69, "AverageSoilTemperature": 15.28, "TemperatureSoilHigh": 23.65, "TemperatureSoilLow": 6.31, "Vegetation": "yes", "PercentCover": 2.4, "Description": "YUN3259.1.1"}, "frequency": 0.0}, {"id": "YUN3259.1.2", "metadata": {"BarcodeSequence": "AGACAAGCTTCC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3259.0, "ExtractConcen": 1.543, "AmpliconConcentration": 16.92, "ExtractGroupNo": "B", "TransectName": "Yungay", "SiteName": "YUN3259", "Depth": 2.0, "pH": 8.1, "TOC": 419.0, "EC": 0.133, "AverageSoilRelativeHumidity": 93.57, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 69.04, "PercentRelativeHumiditySoil_100": 64.69, "AverageSoilTemperature": 15.28, "TemperatureSoilHigh": 23.65, "TemperatureSoilLow": 6.31, "Vegetation": "yes", "PercentCover": 2.4, "Description": "YUN3259.1.2"}, "frequency": 364.0}, {"id": "YUN3259.2", "metadata": {"BarcodeSequence": "TCACTTGGTGCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3259.0, "ExtractConcen": 1.935, "AmpliconConcentration": 12.11, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3259", "Depth": 2.0, "pH": 8.1, "TOC": 342.0, "EC": 0.133, "AverageSoilRelativeHumidity": 93.57, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 69.04, "PercentRelativeHumiditySoil_100": 64.69, "AverageSoilTemperature": 15.28, "TemperatureSoilHigh": 23.65, "TemperatureSoilLow": 6.31, "Vegetation": "yes", "PercentCover": 2.4, "Description": "YUN3259.2"}, "frequency": 312.0}, {"id": "YUN3259.3", "metadata": {"BarcodeSequence": "TTATGTACGGCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3259.0, "ExtractConcen": 3.53, "AmpliconConcentration": 16.74, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3259", "Depth": 2.0, "pH": 8.1, "TOC": 539.0, "EC": 0.133, "AverageSoilRelativeHumidity": 93.57, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 69.04, "PercentRelativeHumiditySoil_100": 64.69, "AverageSoilTemperature": 15.28, "TemperatureSoilHigh": 23.65, "TemperatureSoilLow": 6.31, "Vegetation": "yes", "PercentCover": 2.4, "Description": "YUN3259.3"}, "frequency": 520.0}, {"id": "YUN3259.1.3", "metadata": {"BarcodeSequence": "TCCGCAACCTGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3259.0, "ExtractConcen": 0.329, "AmpliconConcentration": 19.17, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3259", "Depth": 3.0, "pH": 8.4, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 93.57, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 69.04, "PercentRelativeHumiditySoil_100": 64.69, "AverageSoilTemperature": 15.28, "TemperatureSoilHigh": 23.65, "TemperatureSoilLow": 6.31, "Vegetation": "yes", "PercentCover": 2.4, "Description": "YUN3259.1.3"}, "frequency": 96.0}, {"id": "YUN3346.1", "metadata": {"BarcodeSequence": "GAGATACAGTTC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3346.0, "ExtractConcen": 0.314, "AmpliconConcentration": 16.88, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3346", "Depth": 2.0, "pH": 7.1, "TOC": 429.0, "EC": 0.044, "AverageSoilRelativeHumidity": 87.32, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 57.8, "PercentRelativeHumiditySoil_100": 33.13, "AverageSoilTemperature": 15.89, "TemperatureSoilHigh": 23.96, "TemperatureSoilLow": 6.89, "Vegetation": "yes", "PercentCover": 0.01, "Description": "YUN3346.1"}, "frequency": 410.0}, {"id": "YUN3346.2", "metadata": {"BarcodeSequence": "GCATGCATCCCA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3346.0, "ExtractConcen": 0.318, "AmpliconConcentration": 16.26, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3346", "Depth": 2.0, "pH": 7.1, "TOC": 666.0, "EC": 0.044, "AverageSoilRelativeHumidity": 87.32, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 57.8, "PercentRelativeHumiditySoil_100": 33.13, "AverageSoilTemperature": 15.89, "TemperatureSoilHigh": 23.96, "TemperatureSoilLow": 6.89, "Vegetation": "yes", "PercentCover": 0.01, "Description": "YUN3346.2"}, "frequency": 30.0}, {"id": "YUN3346.3", "metadata": {"BarcodeSequence": "GATCTAATCGAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3346.0, "ExtractConcen": 1.218, "AmpliconConcentration": 17.14, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3346", "Depth": 2.0, "pH": 7.1, "TOC": 387.0, "EC": 0.044, "AverageSoilRelativeHumidity": 87.32, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 57.8, "PercentRelativeHumiditySoil_100": 33.13, "AverageSoilTemperature": 15.89, "TemperatureSoilHigh": 23.96, "TemperatureSoilLow": 6.89, "Vegetation": "yes", "PercentCover": 0.01, "Description": "YUN3346.3"}, "frequency": 348.0}, {"id": "YUN3428.1", "metadata": {"BarcodeSequence": "TACGCCCATCAG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3428.0, "ExtractConcen": 1.764, "AmpliconConcentration": 15.32, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3428", "Depth": 2.0, "pH": 7.2, "TOC": 623.0, "EC": 0.023, "AverageSoilRelativeHumidity": 99.99, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.91, "PercentRelativeHumiditySoil_100": 99.42, "AverageSoilTemperature": 13.61, "TemperatureSoilHigh": 21.09, "TemperatureSoilLow": 4.13, "Vegetation": "yes", "PercentCover": 8.8, "Description": "YUN3428.1"}, "frequency": 464.0}, {"id": "YUN3428.2", "metadata": {"BarcodeSequence": "AAGATCGTACTG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3428.0, "ExtractConcen": 1.988, "AmpliconConcentration": 6.61, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3428", "Depth": 2.0, "pH": 7.2, "TOC": 621.0, "EC": 0.023, "AverageSoilRelativeHumidity": 99.99, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.91, "PercentRelativeHumiditySoil_100": 99.42, "AverageSoilTemperature": 13.61, "TemperatureSoilHigh": 21.09, "TemperatureSoilLow": 4.13, "Vegetation": "yes", "PercentCover": 8.8, "Description": "YUN3428.2"}, "frequency": 705.0}, {"id": "YUN3428.3", "metadata": {"BarcodeSequence": "ACTCATCTTCCA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3428.0, "ExtractConcen": 2.782, "AmpliconConcentration": 15.46, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3428", "Depth": 2.0, "pH": 7.2, "TOC": 658.0, "EC": 0.023, "AverageSoilRelativeHumidity": 99.99, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.91, "PercentRelativeHumiditySoil_100": 99.42, "AverageSoilTemperature": 13.61, "TemperatureSoilHigh": 21.09, "TemperatureSoilLow": 4.13, "Vegetation": "yes", "PercentCover": 8.8, "Description": "YUN3428.3"}, "frequency": 408.0}, {"id": "YUN3533.1.1", "metadata": {"BarcodeSequence": "TTGGACGTCCAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3533.0, "ExtractConcen": 3.352, "AmpliconConcentration": 14.29, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3533", "Depth": 1.0, "pH": 7.1, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.93, "PercentRelativeHumiditySoil_100": 99.94, "AverageSoilTemperature": 11.41, "TemperatureSoilHigh": 19.21, "TemperatureSoilLow": 3.47, "Vegetation": "yes", "PercentCover": 8.6, "Description": "YUN3533.1.1"}, "frequency": 399.0}, {"id": "YUN3533.1.2", "metadata": {"BarcodeSequence": "TCCAGGGCTATA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3533.0, "ExtractConcen": 3.21, "AmpliconConcentration": 14.32, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3533", "Depth": 2.0, "pH": 8.0, "TOC": 521.0, "EC": 0.024, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.93, "PercentRelativeHumiditySoil_100": 99.94, "AverageSoilTemperature": 11.41, "TemperatureSoilHigh": 19.21, "TemperatureSoilLow": 3.47, "Vegetation": "yes", "PercentCover": 8.6, "Description": "YUN3533.1.2"}, "frequency": 359.0}, {"id": "YUN3533.2", "metadata": {"BarcodeSequence": "GAAACTCCTAGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3533.0, "ExtractConcen": 9.236, "AmpliconConcentration": 14.33, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3533", "Depth": 2.0, "pH": 8.0, "TOC": 773.0, "EC": 0.024, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.93, "PercentRelativeHumiditySoil_100": 99.94, "AverageSoilTemperature": 11.41, "TemperatureSoilHigh": 19.21, "TemperatureSoilLow": 3.47, "Vegetation": "yes", "PercentCover": 8.6, "Description": "YUN3533.2"}, "frequency": 701.0}, {"id": "YUN3533.3", "metadata": {"BarcodeSequence": "ATCGGGCTTAAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3533.0, "ExtractConcen": 3.642, "AmpliconConcentration": 17.43, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3533", "Depth": 2.0, "pH": 8.0, "TOC": 664.0, "EC": 0.024, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.93, "PercentRelativeHumiditySoil_100": 99.94, "AverageSoilTemperature": 11.41, "TemperatureSoilHigh": 19.21, "TemperatureSoilLow": 3.47, "Vegetation": "yes", "PercentCover": 8.6, "Description": "YUN3533.3"}, "frequency": 584.0}, {"id": "YUN3533.1.3", "metadata": {"BarcodeSequence": "GCGTAGAGAGAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3533.0, "ExtractConcen": 1.987, "AmpliconConcentration": 7.55, "ExtractGroupNo": "D", "TransectName": "Yungay", "SiteName": "YUN3533", "Depth": 3.0, "pH": 7.8, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 100.0, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 99.93, "PercentRelativeHumiditySoil_100": 99.94, "AverageSoilTemperature": 11.41, "TemperatureSoilHigh": 19.21, "TemperatureSoilLow": 3.47, "Vegetation": "yes", "PercentCover": 8.6, "Description": "YUN3533.1.3"}, "frequency": 316.0}, {"id": "YUN3856.1.1", "metadata": {"BarcodeSequence": "AATCTTGCGCCG", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3856.0, "ExtractConcen": 6.444, "AmpliconConcentration": 12.93, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3856", "Depth": 1.0, "pH": 6.98, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 99.44, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 73.75, "PercentRelativeHumiditySoil_100": 93.7, "AverageSoilTemperature": 9.51, "TemperatureSoilHigh": 17.45, "TemperatureSoilLow": 0.45, "Vegetation": "yes", "PercentCover": 3.1, "Description": "YUN3856.1.1"}, "frequency": 333.0}, {"id": "YUN3856.1.2", "metadata": {"BarcodeSequence": "GGAAATCCCATC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3856.0, "ExtractConcen": 6.23, "AmpliconConcentration": 16.35, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3856", "Depth": 2.0, "pH": 7.43, "TOC": 713.0, "EC": 0.029, "AverageSoilRelativeHumidity": 99.44, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 73.75, "PercentRelativeHumiditySoil_100": 93.7, "AverageSoilTemperature": 9.51, "TemperatureSoilHigh": 17.45, "TemperatureSoilLow": 0.45, "Vegetation": "yes", "PercentCover": 3.1, "Description": "YUN3856.1.2"}, "frequency": 462.0}, {"id": "YUN3856.2", "metadata": {"BarcodeSequence": "TTGGAACGGCTT", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3856.0, "ExtractConcen": 4.178, "AmpliconConcentration": 17.12, "ExtractGroupNo": "H", "TransectName": "Yungay", "SiteName": "YUN3856", "Depth": 2.0, "pH": 7.43, "TOC": 404.0, "EC": 0.029, "AverageSoilRelativeHumidity": 99.44, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 73.75, "PercentRelativeHumiditySoil_100": 93.7, "AverageSoilTemperature": 9.51, "TemperatureSoilHigh": 17.45, "TemperatureSoilLow": 0.45, "Vegetation": "yes", "PercentCover": 3.1, "Description": "YUN3856.2"}, "frequency": 304.0}, {"id": "YUN3856.3", "metadata": {"BarcodeSequence": "TCCTAGGTCCGA", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3856.0, "ExtractConcen": 6.695, "AmpliconConcentration": 15.86, "ExtractGroupNo": "H", "TransectName": "Yungay", "SiteName": "YUN3856", "Depth": 2.0, "pH": 7.43, "TOC": 988.0, "EC": 0.029, "AverageSoilRelativeHumidity": 99.44, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 73.75, "PercentRelativeHumiditySoil_100": 93.7, "AverageSoilTemperature": 9.51, "TemperatureSoilHigh": 17.45, "TemperatureSoilLow": 0.45, "Vegetation": "yes", "PercentCover": 3.1, "Description": "YUN3856.3"}, "frequency": 523.0}, {"id": "YUN3856.1.3", "metadata": {"BarcodeSequence": "GACCGTCAATAC", "LinkerPrimerSequence": "CCGGACTACHVGGGTWTCTAAT", "Elevation": 3856.0, "ExtractConcen": 3.134, "AmpliconConcentration": 18.17, "ExtractGroupNo": "G", "TransectName": "Yungay", "SiteName": "YUN3856", "Depth": 3.0, "pH": 7.54, "TOC": null, "EC": null, "AverageSoilRelativeHumidity": 99.44, "RelativeHumiditySoilHigh": 100.0, "RelativeHumiditySoilLow": 73.75, "PercentRelativeHumiditySoil_100": 93.7, "AverageSoilTemperature": 9.51, "TemperatureSoilHigh": 17.45, "TemperatureSoilLow": 0.45, "Vegetation": "yes", "PercentCover": 3.1, "Description": "YUN3856.1.3"}, "frequency": 366.0}]}, {"transform": [{"type": "aggregate", "groupby": ["selectedCategory"]}], "name": "groupedBySelectedCategory", "source": "table"}, {"transform": [{"expr": "datum.frequency >= samplingDepth", "type": "filter"}, {"type": "aggregate", "groupby": ["selectedCategory"]}], "name": "groupedBySelectedCategoryAndRetained", "source": "table"}], "signals": [{"name": "width", "value": "", "bind": {"input": "text"}, "on": [{"events": {"source": "window", "type": "resize"}, "update": "containerSize()[0]"}]}, {"name": "chartHeight", "update": "width / 2.5"}, {"name": "chartOffset", "value": 20}, {"name": "height", "update": "chartHeight + chartOffset"}, {"name": "tooltip", "value": {}, "on": [{"events": "rect:mouseover", "update": "datum"}, {"events": "rect:mouseout", "update": "{}"}]}, {"bind": {"input": "select", "options": ["BarcodeSequence", "LinkerPrimerSequence", "Elevation", "ExtractConcen", "AmpliconConcentration", "ExtractGroupNo", "TransectName", "SiteName", "Depth", "pH", "TOC", "EC", "AverageSoilRelativeHumidity", "RelativeHumiditySoilHigh", "RelativeHumiditySoilLow", "PercentRelativeHumiditySoil_100", "AverageSoilTemperature", "TemperatureSoilHigh", "TemperatureSoilLow", "Vegetation", "PercentCover", "Description"], "element": "#metadata-category"}, "name": "category", "value": "BarcodeSequence"}, {"bind": {"input": "range", "element": "#sampling-depth-slider", "max": 705, "min": 0, "step": 1}, "name": "samplingDepth", "value": 0}], "marks": [{"description": "Interactive rarefaction summary plot", "name": "rarefactionplot", "type": "group", "encode": {"enter": {"x": {"value": 0}, "y": {"signal": "chartOffset"}, "width": {"value": 200}, "height": {"signal": "chartHeight"}}}, "marks": [{"type": "rect", "from": {"data": "groupedBySelectedCategory"}, "encode": {"enter": {"x": {"scale": "xscale", "field": "selectedCategory"}, "width": {"scale": "xscale", "band": 1}, "y": {"scale": "yscale", "field": "count"}, "y2": {"scale": "yscale", "value": 0}}, "update": {"tooltip": {"signal": "{'title': datum.selectedCategory, 'Total Samples': datum.count}"}, "fill": {"value": "#D3D3D3"}, "x": {"scale": "xscale", "field": "selectedCategory"}, "width": {"scale": "xscale", "band": 1}, "y": {"scale": "yscale", "field": "count"}, "y2": {"scale": "yscale", "value": 0}}}}, {"type": "rect", "from": {"data": "groupedBySelectedCategoryAndRetained"}, "encode": {"enter": {"x": {"scale": "xscale", "field": "selectedCategory"}, "width": {"scale": "xscale", "band": 1}, "y": {"scale": "yscale", "field": "count"}, "y2": {"scale": "yscale", "value": 0}}, "update": {"tooltip": {"signal": "{'title': datum.selectedCategory, 'Samples Retained': datum.count}"}, "x": {"scale": "xscale", "field": "selectedCategory"}, "width": {"scale": "xscale", "band": 1}, "y": {"scale": "yscale", "field": "count"}, "y2": {"scale": "yscale", "value": 0}, "fill": {"value": "#1F77B4"}}, "hover": {"fill": {"value": "#60B3F7"}}}}, {"type": "text", "encode": {"enter": {"align": {"value": "center"}, "baseline": {"value": "top"}, "fill": {"value": "#000000"}}, "update": {"x": {"scale": "xscale", "signal": "tooltip.selectedCategory", "band": 0.5}, "y": {"scale": "yscale", "signal": "tooltip.count", "offset": -12}, "text": {"signal": "tooltip.count"}, "fillOpacity": [{"test": "datum === tooltip", "value": 0}, {"value": 1}]}}}], "scales": [{"name": "xscale", "type": "band", "domain": {"data": "groupedBySelectedCategory", "field": "selectedCategory", "sort": true}, "range": "width", "padding": 0.1, "round": true}, {"name": "yscale", "domain": {"fields": [{"data": "groupedBySelectedCategory", "field": "count"}]}, "nice": true, "range": [{"signal": "chartHeight"}, 0]}], "axes": [{"orient": "bottom", "scale": "xscale", "title": {"signal": "category"}, "labelAngle": 90, "labelAlign": "left", "labelBaseline": "middle"}, {"orient": "left", "scale": "yscale", "title": "Number of Samples", "tickMinStep": 1}]}]}
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var spec = JSON.parse(document.getElementById("spec").innerHTML);
+
+    // Try and come up with a good initial estimate of plot dimensions,
+    // based on the browser dimensions.
+    var opts = {
+      width: $("#plot").width(),
+      height: $("#plot").width() / 2.5
+    };
+
+    vegaEmbed("#plot", spec, opts)
+      .then(function(result) {
+        result.view.logLevel(vega.Warn);
+        // Stash the view object in global namespace for debugging purposes.
+        // Check out https://vega.github.io/vega/docs/api/debugging/
+        // for more details.
+        window.v = result.view;
+      })
+      .catch(function(error) {
+        // From 'js-error-handler.html'
+        handleErrors([error], $("#plot"));
+      });
+
+    // Clean up the vega-embed toolbar
+    var toolbar = $("div .vega-actions").detach();
+    toolbar.addClass("btn-group");
+    toolbar.children("a").each(function() {
+      // NOTE: We're just skipping this bit until we get the plot working with
+      // Vega 5
+      if(this.innerHTML == "Open in Vega Editor"){
+        this.remove()
+        return true
+      }
+      $(this).addClass("btn btn-default");
+    });
+
+    toolbar.appendTo("#toolbar");
+
+    var category = $("#metadata-category .vega-bind");
+    category
+      .children(".vega-bind-name")
+      .replaceWith("<label> Metadata Category &nbsp;</label>");
+    category.children("select").addClass("form-control");
+
+    var samplingDepthSlider = $("#sampling-depth-slider .vega-bind");
+    $(samplingDepthSlider)
+      .find("label")
+      .remove();
+    $(samplingDepthSlider)
+      .find("input")
+      .attr("id", "range-slider");
+    $(samplingDepthSlider)
+      .find("input")
+      .attr("oninput", "sliderHelperFunction(this.value);");
+    $(samplingDepthSlider).prepend(
+      "<label> Sampling Depth &nbsp; </label> <br>"
+    );
+    $(samplingDepthSlider).append(
+      '<br> <input id="text-box" class="form-control" type="number" value="0" min="0" oninput="textBoxHelperFunction(this.value);" />'
+    );
+    $(samplingDepthSlider).append("(zero implies no even sampling)");
+    samplingDepthSlider.children(".vega-bind-name").replaceWith("");
+
+    var rotateLabels = $("#rotate-labels .vega-bind");
+    rotateLabels
+      .children(".vega-bind-name")
+      .replaceWith("<label> Rotate Labels &nbsp;</label>");
+    rotateLabels.children("checkbox").addClass("form-control");
+  });
+</script>
+
+
+<div class="row">
+  <div class="col-lg-8">
+    <table id="feature-table" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Sample ID</th>
+          <th scope="col"> Frequency </th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script id="table-data" type="application/json">
+{"YUN3428.2":705.0,"YUN3533.2":701.0,"YUN2029.2":677.0,"BAQ4166.1.2":641.0,"BAQ4697.3":621.0,"YUN1005.1.1":610.0,"YUN3533.3":584.0,"BAQ3473.3":581.0,"YUN1242.3":530.0,"YUN3856.3":523.0,"YUN3259.3":520.0,"BAQ4697.1":503.0,"YUN1609.1":498.0,"BAQ4697.2":495.0,"YUN1242.1":488.0,"BAQ4166.3":465.0,"YUN3428.1":464.0,"YUN3856.1.2":462.0,"BAQ4166.2":438.0,"BAQ3473.1":418.0,"BAQ4166.1.3":413.0,"YUN3346.1":410.0,"YUN3428.3":408.0,"BAQ2462.1":399.0,"YUN3533.1.1":399.0,"YUN3856.1.3":366.0,"YUN3259.1.2":364.0,"YUN3153.3":362.0,"YUN3533.1.2":359.0,"BAQ2687.2":354.0,"YUN3346.3":348.0,"YUN3856.1.1":333.0,"BAQ2687.3":332.0,"BAQ2420.2":324.0,"YUN3533.1.3":316.0,"YUN1005.3":314.0,"YUN3259.2":312.0,"BAQ2462.2":311.0,"BAQ4166.1.1":311.0,"YUN3856.2":304.0,"BAQ2687.1":302.0,"BAQ2420.1.1":301.0,"BAQ2420.1.3":282.0,"BAQ3473.2":280.0,"YUN3153.2":275.0,"BAQ2420.1.2":267.0,"BAQ2462.3":266.0,"BAQ2420.3":263.0,"BAQ2838.1":185.0,"BAQ2838.2":174.0,"YUN3259.1.3":96.0,"BAQ2838.3":95.0,"YUN3346.2":30.0,"YUN1242.2":1.0,"BAQ1552.1.1":1.0,"YUN3259.1.1":0.0,"YUN3153.1":0.0,"YUN3008.3":0.0,"YUN3008.2":0.0,"YUN3008.1.3":0.0,"YUN3008.1.1":0.0,"YUN2029.1":0.0,"YUN1005.2":0.0,"YUN1005.1.3":0.0,"BAQ895.2":0.0,"BAQ1370.1.3":0.0}
+</script>
+
+<script type="text/javascript">
+  var totalFrequencies = 20781;
+  var sampleCount = 66;
+  var defaultDescription = "Retained " + (totalFrequencies.toLocaleString('en'))
+                                       + " (100.00%) features in "
+                                       + sampleCount + " (100.00%) samples at the specifed sampling depth.";
+
+
+  var textField = document.getElementById('text-field');
+  var tableBody = document.getElementById("table-body");
+  var table = document.getElementById("feature-table");
+
+  // when the viz loads the default description is displayed
+  textField.innerHTML = defaultDescription;
+
+  var sampleFrequency = JSON.parse(document.getElementById("table-data").innerHTML);
+  // get object keys and store them in an ascending order based on the key value
+  // this order is used to create the table rows
+  sortedSampleIDs = Object.keys(sampleFrequency).sort(function(a, b) {
+    var temp = sampleFrequency[a] - sampleFrequency[b];
+    // if two samples have the same number of features then we
+    // determine the order using the sample ID alphabetical order
+    if (temp == 0){
+      return b.localeCompare(a);
+    }
+
+  return temp;
+  });
+
+  sortedSampleIDs.forEach(function(element) {
+    var row = tableBody.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = element;
+    cell2.innerHTML = sampleFrequency[element];
+
+  });
+
+
+  function updateTableandText(val) {
+    var retainedSampleCount = 0;
+
+    // start the counter at 1 to ignore the header row
+    for (var i = 1; row = table.rows[i]; i++) {
+
+      if (Number(row.cells[1].innerHTML) < val) {
+        row.className = "danger";
+      } else {
+        row.className = "";
+        retainedSampleCount += 1;
+      }
+    }
+    if (val == 0){
+
+    textField.innerHTML = defaultDescription;
+
+    }
+    else{
+      var retainedFeatureCount = retainedSampleCount * val;
+      textField.innerHTML = "Retained " + retainedFeatureCount.toLocaleString('en')
+                                        + " (" + (retainedFeatureCount/totalFrequencies*100).toFixed(2) + "%) features in "
+                                        + retainedSampleCount + " (" + (retainedSampleCount/sampleCount*100).toFixed(2)
+                                        +  "%) samples at the specifed sampling depth.";
+    }
+
+  }
+
+
+  function updateSliderVal(val) {
+    var slider = document.getElementById("range-slider");
+    slider.value = val;
+    slider.dispatchEvent(new Event("change"));
+    slider.dispatchEvent(new Event("input"));
+  }
+
+
+  function updateBoxVal(val) {
+    var num = document.getElementById("text-box");
+    num.value = val;
+  }
+
+
+  function sliderHelperFunction(val){
+    updateBoxVal(val);
+    updateTableandText(val);
+
+  }
+
+
+  function textBoxHelperFunction(val){
+    val = parseInt(val);
+    if (val !== val) {
+      val = 0;
+    }
+
+    // make sure the value in the textbox cannot exceed the max count
+    if (val > 705.0){
+      var num = document.getElementById("text-box");
+      num.value = 705.0;
+    }
+    updateSliderVal(val);
+  }
+</script>
+
+
+    </div>
+  </div>
+
+
+    </div>
+    <script type="text/javascript">
+      if (window.frameElement) {
+          document.getElementById('q2templatesheader').remove();
+      }
+    </script>
+    
+
+  </body>
+</html>
